@@ -8,12 +8,15 @@ public class Magic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //public bool travelingDirection = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.right * Time.deltaTime * speed;
+        //if (travelingDirection == true)
+            transform.position += transform.right * Time.deltaTime * speed;     
+        //if (travelingDirection == false)
+        //    transform.position += transform.right * Time.deltaTime * speed;
     }
 }

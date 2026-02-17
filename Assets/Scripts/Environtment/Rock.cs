@@ -19,9 +19,7 @@ public class Rock : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (sirRoly.GetComponent<SirRoly_Special>().IsRolled() == true)
-        {
-            Destroy(this.gameObject);
-        }
+        //if (sirRoly.GetComponent<SirRoly_Special>())
+            //Destroy(this.gameObject);
     }
 }
