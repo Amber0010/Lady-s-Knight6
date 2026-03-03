@@ -1,11 +1,17 @@
+<<<<<<< Updated upstream
+=======
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.InputSystem;
+>>>>>>> Stashed changes
 using UnityEngine;
 
-public class SirRoly_Special : MonoBehaviour
+public class SirRoly_Special
 {
-    public bool isRolled = false;
+    
+<<<<<<< Updated upstream
+=======
 
     // Start is called before the first frame update
     void Start()
@@ -16,19 +22,9 @@ public class SirRoly_Special : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.U))
-        {
-            isRolled = true;
-        }
-        else
-        {
-            isRolled = false;
-        }
-
+        
     }
 
-    public bool IsRolled()
-    {
-        return isRolled;
-    }
+    
+>>>>>>> Stashed changes
 }

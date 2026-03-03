@@ -1165,20 +1165,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2732072648458437069, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
-      propertyPath: m_Radius
-      value: 0.48983735
-      objectReference: {fileID: 0}
-    - target: {fileID: 2732072648458437069, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.042104542
-      objectReference: {fileID: 0}
-    - target: {fileID: 2732072648458437069, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.11324616
-      objectReference: {fileID: 0}
     - target: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
       propertyPath: m_Name
+      value: LadyBug
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: m_TagString
       value: LadyBug
       objectReference: {fileID: 0}
     m_RemovedComponents: []
