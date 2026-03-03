@@ -248,5 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f994dd9a3a04d46b3c561c47017e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LadyBug_Movemtn
+  asset: {fileID: -944628639613478452, guid: b5cced77adc28ed439af8d86160e2fbf, type: 3}
   speed: 5
   jumpForce: 2

@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292578a2f56052546be5d533e85b6ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SirRoly_Movement
-  asset: {fileID: 0}
+  asset: {fileID: -944628639613478452, guid: ffc5b10a61cf2e145b4647b9163a22f4, type: 3}
   speed: 5
   jumpForce: 2
 --- !u!114 &5453824055148809404
