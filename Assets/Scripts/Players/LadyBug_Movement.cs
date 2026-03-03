@@ -1,32 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class LadyBug_Movemtn : MonoBehaviour
+public class Lady_Movement : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpForce = 2f;
-    Rigidbody2D rb;
+    public InputActionAsset asset;
+    public float speed = 6f;
+    public float jumpForce = 4f;
+    InputActionMap inputActions;
+    InputAction move;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        inputActions = asset.FindActionMap("LadyButtons");
+        move = inputActions.FindAction("MoveL");
+        inputActions.Enable();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position -= transform.right * Time.deltaTime * speed;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += transform.right * Time.deltaTime * speed;
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-        }
+        Vector2 movementDir = move.ReadValue<Vector2>();
+        transform.position = new Vector3(transform.position.x + movementDir.x * speed, transform.position.y + movementDir.y * speed, 0);
+
     }
 }

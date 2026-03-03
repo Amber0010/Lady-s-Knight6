@@ -14,21 +14,21 @@ public class SirRoly_Special : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.U))
-        {
-            isRolled = true;
-        }
-        else
-        {
-            isRolled = false;
-        }
+    //void Update()
+    //{
+    //    if (Input.GetKey(KeyCode.U))
+    //    {
+    //        isRolled = true;
+    //    }
+    //    else
+    //    {
+    //        isRolled = false;
+    //    }
 
     }
 
-    public bool IsRolled()
-    {
-        return isRolled;
-    }
-}
+//public bool IsRolled()
+//{
+//    return isRolled;
+//}
+//}
