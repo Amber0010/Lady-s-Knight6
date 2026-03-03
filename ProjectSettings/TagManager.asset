@@ -2,8 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 3
+<<<<<<< Updated upstream
+  serializedVersion: 2
   tags: []
+=======
+  serializedVersion: 3
+  tags:
+  - SirRoly
+  - LadyBug
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -38,14 +45,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3426565165
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 2983737793
-    locked: 0
-  m_RenderingLayers:
-  - Default

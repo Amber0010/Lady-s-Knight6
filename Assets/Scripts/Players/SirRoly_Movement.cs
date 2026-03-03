@@ -1,27 +1,75 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class SirRoly_Movement : MonoBehaviour
 {
-    public InputActionAsset asset;
     public float speed = 5f;
     public float jumpForce = 2f;
-    InputActionMap inputActions;
-    InputAction move;
-    InputAction roll;
+    Rigidbody2D rb;
+
+    public bool isRolled = false;
+
+    public GameObject normalState;
+    public GameObject rolledState;
+
     // Start is called before the first frame update
     void Start()
     {
-        inputActions = asset.FindActionMap("RolyButtons");
-        move = inputActions.FindAction("MoveR");
-        inputActions.Enable();
+        rb = GetComponentInChildren<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        Vector2 movementDir = move.ReadValue<Vector2>();
-        transform.position = new Vector3(transform.position.x+movementDir.x*speed, transform.position.y+movementDir.y*speed, 0);
+        if (Input.GetKey(KeyCode.J))
+        {
+            transform.position -= transform.right * Time.deltaTime * speed;
+        }
+        if (Input.GetKey(KeyCode.L))
+        {
+            transform.position += transform.right * Time.deltaTime * speed;
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            changeState();
+            rolyState();
+            ResetRB();
+        }
 
+    }
+    public bool IsRolled()
+    {
+        return isRolled;
+    }
+
+    public void changeState()
+    {
+        isRolled = !isRolled;
+    }
+
+    public void rolyState()
+    {
+        if (!isRolled)
+        {
+            normalState.transform.position = rolledState.transform.position;
+            normalState.SetActive(true);
+            rolledState.SetActive(false);
+        }
+        if (isRolled)
+        {
+            rolledState.transform.position = normalState.transform.position;
+            normalState.SetActive(false);
+            rolledState.SetActive(true);
+        }
+    }
+
+    private void ResetRB()
+    {
+        rb = GetComponentInChildren<Rigidbody2D>();
     }
 }

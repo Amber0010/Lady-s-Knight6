@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8571052095645440074}
   - component: {fileID: 8464777320173223355}
+  - component: {fileID: 8427270684328998812}
   m_Layer: 0
   m_Name: LadyBugSprite
   m_TagString: Untagged
@@ -112,7 +113,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 8162544506438648282, guid: 40045a8499a20764899c59d01dda938e, type: 3}
   m_Color: {r: 0.8792453, g: 0.5623852, b: 0.8349904, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,6 +123,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &8427270684328998812
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7315266414636329513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f87d915f55d99a842b34ab7fe18841dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8553372962377755940
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +160,7 @@ GameObject:
   - component: {fileID: 1731631321413682216}
   m_Layer: 0
   m_Name: LadyBug
-  m_TagString: Untagged
+  m_TagString: LadyBug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,4 +273,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LadyBug_Movemtn
   asset: {fileID: -944628639613478452, guid: b5cced77adc28ed439af8d86160e2fbf, type: 3}
   speed: 5
-  jumpForce: 2
+  jumpForce: 5
