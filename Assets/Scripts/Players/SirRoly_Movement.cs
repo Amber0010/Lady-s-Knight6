@@ -7,10 +7,16 @@ public class SirRoly_Movement : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 2f;
     Rigidbody2D rb;
+
+    public bool isRolled = false;
+
+    public GameObject normalState;
+    public GameObject rolledState;
+
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponentInChildren<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -28,6 +34,42 @@ public class SirRoly_Movement : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
         }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            changeState();
+            rolyState();
+            ResetRB();
+        }
 
+    }
+    public bool IsRolled()
+    {
+        return isRolled;
+    }
+
+    public void changeState()
+    {
+        isRolled = !isRolled;
+    }
+
+    public void rolyState()
+    {
+        if (!isRolled)
+        {
+            normalState.transform.position = rolledState.transform.position;
+            normalState.SetActive(true);
+            rolledState.SetActive(false);
+        }
+        if (isRolled)
+        {
+            rolledState.transform.position = normalState.transform.position;
+            normalState.SetActive(false);
+            rolledState.SetActive(true);
+        }
+    }
+
+    private void ResetRB()
+    {
+        rb = GetComponentInChildren<Rigidbody2D>();
     }
 }
