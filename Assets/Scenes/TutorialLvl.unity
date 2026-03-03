@@ -378,12 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5e14603a8b7054eba33df6a3fa3139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rock
-  sirRoly: {fileID: 425572845}
---- !u!1 &425572845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3992047063068652928, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
-  m_PrefabInstance: {fileID: 8813241367310606978}
-  m_PrefabAsset: {fileID: 0}
+  sirRoly: {fileID: 1103889861}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +600,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1103889861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1796542000995949273, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
+  m_PrefabInstance: {fileID: 8813241367310606978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1538077523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,6 +1165,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2732072648458437069, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: m_Radius
+      value: 0.48983735
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732072648458437069, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.042104542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732072648458437069, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.11324616
+      objectReference: {fileID: 0}
     - target: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
       propertyPath: m_Name
       value: LadyBug
@@ -1185,6 +1197,10 @@ PrefabInstance:
     - target: {fileID: 1796542000995949273, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
       propertyPath: m_Name
       value: SIrRolyController
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796542000995949273, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
+      propertyPath: m_TagString
+      value: SirRoly
       objectReference: {fileID: 0}
     - target: {fileID: 8957577113254186581, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
       propertyPath: m_LocalPosition.x
