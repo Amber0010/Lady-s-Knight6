@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class SirRoly_Movement : MonoBehaviour
@@ -13,23 +14,51 @@ public class SirRoly_Movement : MonoBehaviour
     public GameObject normalState;
     public GameObject rolledState;
 
+    public GameObject sword;
+    public Transform swordSpawn;
+
+    private Animator animator;
+
+    private SpriteRenderer spriteRenderer;
+    private bool facingRight = true;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponentInChildren<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        float move = Input.GetAxisRaw("Horizontal_Roly");
+
         if (Input.GetKey(KeyCode.J))
         {
-            transform.position -= transform.right * Time.deltaTime * speed;
+            rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
+            //transform.position -= transform.right * Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.L))
         {
-            transform.position += transform.right * Time.deltaTime * speed;
+            rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
+            //transform.position += transform.right * Time.deltaTime * speed;
         }
+
+        if (move > 0)
+        {
+            facingRight = true;
+            spriteRenderer.flipX = false;
+        }
+        else if (move < 0)
+        {
+            facingRight = false;
+            spriteRenderer.flipX = true;
+        }
+
+        animator.SetBool("isWalking", move != 0);
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
@@ -38,16 +67,19 @@ public class SirRoly_Movement : MonoBehaviour
         {
             changeState();
             rolyState();
-            ResetRB();
+            Reset();
         }
-
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            SpawnSword();
+        }
     }
     public bool IsRolled()
     {
         return isRolled;
     }
 
-    public void changeState()
+    void changeState()
     {
         isRolled = !isRolled;
     }
@@ -68,8 +100,24 @@ public class SirRoly_Movement : MonoBehaviour
         }
     }
 
-    private void ResetRB()
+    void SpawnSword()
+    {
+        if (sword == null) return;
+
+        GameObject swordObj = Instantiate(sword, swordSpawn.position, swordSpawn.rotation, swordSpawn);
+
+        Sword swing = swordObj.GetComponent<Sword>();
+
+        if (swing != null)
+        {
+            swing.Init(facingRight);
+        }
+    }
+
+
+    private void Reset()
     {
         rb = GetComponentInChildren<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
     }
 }
