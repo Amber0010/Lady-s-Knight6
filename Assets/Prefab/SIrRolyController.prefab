@@ -52,7 +52,8 @@ MonoBehaviour:
   isRolled: 0
   normalState: {fileID: 3992047063068652928}
   rolledState: {fileID: 2676151398025278409}
-  sword: {fileID: 8284517361968700386, guid: 80844698ac2e316458a013256a9ad7d6, type: 3}
+  sword: {fileID: 3292407905698205933, guid: 80844698ac2e316458a013256a9ad7d6, type: 3}
+  swordSpawn: {fileID: 7325216796045886187}
 --- !u!114 &7205374501057875131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 7513485445022629131}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.325, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0.325, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -421,6 +422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6506066427175004471}
   - component: {fileID: 3249421234098810418}
+  - component: {fileID: 1104533574329479331}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -493,7 +495,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4666667, g: 0.52156866, b: 0.5568628, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -502,3 +504,25 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1104533574329479331
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707194701254326107}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93560cc547a881846a1926af0d86661c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

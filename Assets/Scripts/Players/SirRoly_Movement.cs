@@ -69,7 +69,7 @@ public class SirRoly_Movement : MonoBehaviour
             rolyState();
             Reset();
         }
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O) && !isRolled)
         {
             SpawnSword();
         }
@@ -113,7 +113,6 @@ public class SirRoly_Movement : MonoBehaviour
             swing.Init(facingRight);
         }
     }
-
 
     private void Reset()
     {
