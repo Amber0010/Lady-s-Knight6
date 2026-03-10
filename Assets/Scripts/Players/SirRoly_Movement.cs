@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
@@ -19,7 +18,9 @@ public class SirRoly_Movement : MonoBehaviour
     public Transform swordSpawn;
 
     private Animator animator;
-
+    
+    private bool canJump = true;
+    
     private SpriteRenderer spriteRenderer;
     private bool facingRight = true;
 
@@ -34,21 +35,17 @@ public class SirRoly_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float move = 0f;
+        float move = Input.GetAxisRaw("Horizontal_Roly");
 
         if (Input.GetKey(KeyCode.J))
         {
-            move = -1f;
-            rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
+            rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
+            //transform.position -= transform.right * Time.deltaTime * speed;
         }
-        else if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.L))
         {
-            move = 1f;
-            rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
-        }
-        else
-        {
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
+            //transform.position += transform.right * Time.deltaTime * speed;
         }
 
         if (move > 0)
@@ -64,10 +61,10 @@ public class SirRoly_Movement : MonoBehaviour
 
         animator.SetBool("isWalking", move != 0);
 
-        if (Input.GetKeyDown(KeyCode.I) && !isRolled)
+        if (Input.GetKeyDown(KeyCode.I) && canJump)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-            animator.SetTrigger("Jump");
+            canJump = false;
         }
         if (Input.GetKeyDown(KeyCode.U))
         {
@@ -112,12 +109,12 @@ public class SirRoly_Movement : MonoBehaviour
 
         GameObject swordObj = Instantiate(sword, swordSpawn.position, swordSpawn.rotation, swordSpawn);
 
-        //Sword swing = swordObj.GetComponent<Sword>();
+        Sword swing = swordObj.GetComponent<Sword>();
 
-        /*if (swing != null)
+        if (swing != null)
         {
             swing.Init(facingRight);
-        }*/
+        }
     }
 
     private void Reset()
@@ -125,4 +122,14 @@ public class SirRoly_Movement : MonoBehaviour
         rb = GetComponentInChildren<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.contacts[0].normal.y > .5f)
+        {
+            canJump = true;
+        }
+    }
+
 }
+
+
