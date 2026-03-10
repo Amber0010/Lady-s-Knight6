@@ -34,17 +34,21 @@ public class SirRoly_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float move = Input.GetAxisRaw("Horizontal_Roly");
+        float move = 0f;
 
         if (Input.GetKey(KeyCode.J))
         {
-            rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
-            //transform.position -= transform.right * Time.deltaTime * speed;
+            move = -1f;
+            rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
         }
-        if (Input.GetKey(KeyCode.L))
+        else if (Input.GetKey(KeyCode.L))
         {
-            rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
-            //transform.position += transform.right * Time.deltaTime * speed;
+            move = 1f;
+            rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
         }
 
         if (move > 0)
@@ -60,9 +64,10 @@ public class SirRoly_Movement : MonoBehaviour
 
         animator.SetBool("isWalking", move != 0);
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && !isRolled)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+            animator.SetTrigger("Jump");
         }
         if (Input.GetKeyDown(KeyCode.U))
         {

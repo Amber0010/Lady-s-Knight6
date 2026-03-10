@@ -16,6 +16,8 @@ public class LadyBug_Movement : MonoBehaviour
     private float glideSpeed;
     private float startGravity;
 
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     public GameObject sparkleSpell;
     public float sparkleDuration = .5f;
@@ -27,7 +29,8 @@ public class LadyBug_Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         startGravity = rb.gravityScale;
-
+        animator = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -45,18 +48,37 @@ public class LadyBug_Movement : MonoBehaviour
             move = 1f;
             RightFacing = true;
         }
+
+        if (move > 0)
+        {
+            RightFacing = true;
+            spriteRenderer.flipX = false;
+        }
+        else if (move < 0)
+        {
+            RightFacing = false;
+            spriteRenderer.flipX = true;
+        }
+
+        animator.SetBool("isWalking", move != 0);
+
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+
         if (Input.GetKeyDown(KeyCode.W))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            animator.SetTrigger("Jump");
+
             if (rb.linearVelocityY <= 0)
             {
                 rb.gravityScale = 0;
+                animator.SetBool("isGliding", true);
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, glideSpeed);
             }
             else
             {
                 rb.gravityScale = startGravity;
+                animator.SetBool("isGliding", false);
             }
         }
         if (Input.GetKeyDown(KeyCode.Q))

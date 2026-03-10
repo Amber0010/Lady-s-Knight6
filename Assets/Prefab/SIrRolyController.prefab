@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8957577113254186581}
+  - component: {fileID: 6769201999134013766}
   m_Layer: 0
   m_Name: SIrRolyController
   m_TagString: SirRoly
@@ -31,8 +32,28 @@ Transform:
   m_Children:
   - {fileID: 3544350101915578934}
   - {fileID: 5670856898462322827}
+  - {fileID: 190423466058525294}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6769201999134013766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796542000995949273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292578a2f56052546be5d533e85b6ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SirRoly_Movement
+  speed: 2
+  jumpForce: 6
+  isRolled: 0
+  normalState: {fileID: 3992047063068652928}
+  rolledState: {fileID: 2676151398025278409}
+  sword: {fileID: 3292407905698205933, guid: 80844698ac2e316458a013256a9ad7d6, type: 3}
+  swordSpawn: {fileID: 190423466058525294}
 --- !u!1 &2676151398025278409
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,9 +63,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5670856898462322827}
-  - component: {fileID: 2149519601044659845}
+  - component: {fileID: 5292812944482503266}
   - component: {fileID: 1106886040464904949}
-  - component: {fileID: 4144439286003135991}
+  - component: {fileID: 3276979317309127675}
+  - component: {fileID: 5654266408254888079}
   m_Layer: 0
   m_Name: SirRolyRolled
   m_TagString: SirRoly
@@ -62,13 +84,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6506066427175004471}
   m_Father: {fileID: 8957577113254186581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &2149519601044659845
+--- !u!58 &5292812944482503266
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +125,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.4
+  m_Radius: 0.22
 --- !u!50 &1106886040464904949
 Rigidbody2D:
   serializedVersion: 5
@@ -131,7 +153,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4144439286003135991
+--- !u!114 &3276979317309127675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,14 +162,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 2676151398025278409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 292578a2f56052546be5d533e85b6ad6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e8a5a2330a20e445804334fe8b6dce9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SirRoly_Movement
-  speed: 5
-  jumpForce: 2
-  isRolled: 0
-  normalState: {fileID: 0}
-  rolledState: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::Collector
+--- !u!95 &5654266408254888079
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2676151398025278409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3992047063068652928
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,10 +196,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3544350101915578934}
-  - component: {fileID: 1433317007497394416}
   - component: {fileID: 6598951070422559695}
-  - component: {fileID: 5255296492420831987}
   - component: {fileID: 4676155565641030624}
+  - component: {fileID: 6115581192797103204}
   m_Layer: 0
   m_Name: SirRoly
   m_TagString: SirRoly
@@ -177,15 +215,54 @@ Transform:
   m_GameObject: {fileID: 3992047063068652928}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 938712740973888179}
   m_Father: {fileID: 8957577113254186581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1433317007497394416
-CircleCollider2D:
+--- !u!50 &6598951070422559695
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992047063068652928}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1.5
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &4676155565641030624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992047063068652928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8a5a2330a20e445804334fe8b6dce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!70 &6115581192797103204
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -218,64 +295,9 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!50 &6598951070422559695
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3992047063068652928}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &5255296492420831987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3992047063068652928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 292578a2f56052546be5d533e85b6ad6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SirRoly_Movement
-  speed: 2
-  jumpForce: 3
-  isRolled: 0
-  normalState: {fileID: 0}
-  rolledState: {fileID: 0}
---- !u!114 &4676155565641030624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3992047063068652928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8a5a2330a20e445804334fe8b6dce9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_Offset: {x: 0, y: -0.08439714}
+  m_Size: {x: 0.5, y: 1.1687943}
+  m_Direction: 0
 --- !u!1 &4878626045082540605
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,8 +308,9 @@ GameObject:
   m_Component:
   - component: {fileID: 938712740973888179}
   - component: {fileID: 5643164031172590796}
+  - component: {fileID: 136624443120121734}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: NormalSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +380,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -334549523355427435, guid: a1d7cbe76cc13a14d826593266ff0d59, type: 3}
   m_Color: {r: 0.6459593, g: 0.71584207, b: 0.7207546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -367,6 +390,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &136624443120121734
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878626045082540605}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13e9d0c9ba9f5bc4482a2157d25556ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &6973324181106071821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190423466058525294}
+  m_Layer: 0
+  m_Name: SwordPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &190423466058525294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6973324181106071821}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.382, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8957577113254186581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8707194701254326107
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +454,7 @@ GameObject:
   - component: {fileID: 6506066427175004471}
   - component: {fileID: 3249421234098810418}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: RolledSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,12 +524,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -4825321697455300368, guid: f2fa9afff3e2ecd45bfa1d0307ea3705, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6, y: 0.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
