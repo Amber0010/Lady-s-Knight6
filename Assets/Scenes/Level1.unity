@@ -5223,7 +5223,7 @@ GameObject:
   - component: {fileID: 1498574232}
   - component: {fileID: 1498574231}
   m_Layer: 0
-  m_Name: Plant1
+  m_Name: ElevatorPlant
   m_TagString: SparkleInteract
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5278,12 +5278,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 093deffda74899c40926d95d7837cf34, type: 3}
   m_Color: {r: 0.46857855, g: 0.754717, b: 0.4236383, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5297,8 +5297,8 @@ Transform:
   m_GameObject: {fileID: 1498574228}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.29, y: -3.8, z: 0}
-  m_LocalScale: {x: 2.3771, y: 0.868457, z: 1}
+  m_LocalPosition: {x: -6.29, y: -4.1, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5337,17 +5337,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.100488424, y: 1.8087902}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 10, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.84296, y: 4.6175804}
   m_EdgeRadius: 0
 --- !u!50 &1498574232
 Rigidbody2D:
@@ -6299,6 +6299,22 @@ PrefabInstance:
     - target: {fileID: 312274581493193659, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.079
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731631321413682216, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: sparkleDur
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731631321413682216, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: sparkleSpell
+      value: 
+      objectReference: {fileID: 7714192173956001571, guid: 88d48a7b66ab63b48b46209d11852d1a, type: 3}
+    - target: {fileID: 1731631321413682216, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: detectionRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731631321413682216, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: sparkleDuration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
       propertyPath: m_Name
