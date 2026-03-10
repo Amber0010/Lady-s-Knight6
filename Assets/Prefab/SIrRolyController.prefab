@@ -32,7 +32,6 @@ Transform:
   m_Children:
   - {fileID: 3544350101915578934}
   - {fileID: 5670856898462322827}
-  - {fileID: 190423466058525294}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6769201999134013766
@@ -53,7 +52,40 @@ MonoBehaviour:
   normalState: {fileID: 3992047063068652928}
   rolledState: {fileID: 2676151398025278409}
   sword: {fileID: 3292407905698205933, guid: 80844698ac2e316458a013256a9ad7d6, type: 3}
-  swordSpawn: {fileID: 190423466058525294}
+  swordSpawnLeft: {fileID: 1528062551118070386}
+  swordSpawnRight: {fileID: 190423466058525294}
+  canJump: 1
+--- !u!1 &2428956369044607519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1528062551118070386}
+  m_Layer: 0
+  m_Name: SwordPointLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1528062551118070386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2428956369044607519}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.36, y: -0.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3544350101915578934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2676151398025278409
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +116,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6506066427175004471}
@@ -125,7 +157,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.22
+  m_Radius: 0.2
 --- !u!50 &1106886040464904949
 Rigidbody2D:
   serializedVersion: 5
@@ -199,6 +231,7 @@ GameObject:
   - component: {fileID: 6598951070422559695}
   - component: {fileID: 4676155565641030624}
   - component: {fileID: 6115581192797103204}
+  - component: {fileID: 2787607618202932243}
   m_Layer: 0
   m_Name: SirRoly
   m_TagString: SirRoly
@@ -220,6 +253,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 938712740973888179}
+  - {fileID: 190423466058525294}
+  - {fileID: 1528062551118070386}
   m_Father: {fileID: 8957577113254186581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6598951070422559695
@@ -298,6 +333,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.08439714}
   m_Size: {x: 0.5, y: 1.1687943}
   m_Direction: 0
+--- !u!114 &2787607618202932243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992047063068652928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3de1e2febd827b4aa96e509de0d5bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundCollisionRelay
 --- !u!1 &4878626045082540605
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 190423466058525294}
   m_Layer: 0
-  m_Name: SwordPoint
+  m_Name: SwordPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,12 +483,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6973324181106071821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.382, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.38199997, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8957577113254186581}
+  m_Father: {fileID: 3544350101915578934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8707194701254326107
 GameObject:

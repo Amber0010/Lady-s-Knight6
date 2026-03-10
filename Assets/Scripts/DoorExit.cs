@@ -9,6 +9,8 @@ public class DoorExit : MonoBehaviour
     [SerializeField] private Sprite openDoor;
 
 
+    Animator animator;
+
     private int totalClovers;
     private int CurrClovers = 0;
     private bool DoorOpen = false;
@@ -27,6 +29,7 @@ public class DoorExit : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         totalClovers = FindObjectsByType<CloverLeaf>(FindObjectsSortMode.None).Length;
         spriteRenderer.sprite = closedDoor;
+        animator = GetComponent<Animator>();
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
    private void HandleCloverCollected(int num)
@@ -40,7 +43,8 @@ public class DoorExit : MonoBehaviour
     private void OpenDoor()
     {
         DoorOpen = true;
-        spriteRenderer.sprite=openDoor;
+        animator.SetTrigger("Open");
+        //spriteRenderer.sprite=openDoor;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
