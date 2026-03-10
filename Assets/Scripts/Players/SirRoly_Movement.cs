@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-=======
->>>>>>> Stashed changes
+
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,7 +8,6 @@ public class SirRoly_Movement : MonoBehaviour
     public InputActionAsset asset;
     public float speed = 5f;
     public float jumpForce = 2f;
-<<<<<<< Updated upstream
     Rigidbody2D rb;
 
     public bool isRolled = false;
@@ -35,7 +29,6 @@ public class SirRoly_Movement : MonoBehaviour
         rb = GetComponentInChildren<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-=======
     InputActionMap inputActions;
     InputAction move;
     InputAction roll;
@@ -45,13 +38,13 @@ public class SirRoly_Movement : MonoBehaviour
         inputActions = asset.FindActionMap("RolyActions");
         move = inputActions.FindAction("Move");
         inputActions.Enable();
->>>>>>> Stashed changes
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-<<<<<<< Updated upstream
+
         float move = 0f;
 
         if (Input.GetKey(KeyCode.J))
@@ -97,9 +90,9 @@ public class SirRoly_Movement : MonoBehaviour
         {
             SpawnSword();
         }
-=======
+
         Vector2 movementDir = move.ReadValue<Vector2>();
->>>>>>> Stashed changes
+
     }
     public bool IsRolled()
     {
