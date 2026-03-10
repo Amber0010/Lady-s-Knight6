@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 40fc2a82cbe42204787a7ef7c752912c
+guid: 97d01b6c3bb2cd241bc32511a2ccc751
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 231734161460158004
-    second: SR_Walk_Test-Sheet_0
+      213: -6513505052783032372
+    second: Lady_Glide_entrance-Sheet_0
   - first:
-      213: 9177712549464391743
-    second: SR_Walk_Test-Sheet_1
+      213: -5473049952139287611
+    second: Lady_Glide_entrance-Sheet_1
   - first:
-      213: -5164895779625095365
-    second: SR_Walk_Test-Sheet_2
+      213: 3667966733534080414
+    second: Lady_Glide_entrance-Sheet_2
   - first:
-      213: 1453892170647380562
-    second: SR_Walk_Test-Sheet_3
+      213: -5764393600728059837
+    second: Lady_Glide_entrance-Sheet_3
   - first:
-      213: 6119088133640805432
-    second: SR_Walk_Test-Sheet_4
+      213: -9200330444675091541
+    second: Lady_Glide_entrance-Sheet_4
   - first:
-      213: 2814306041364019256
-    second: SR_Walk_Test-Sheet_5
+      213: -5616017489003818386
+    second: Lady_Glide_entrance-Sheet_5
   - first:
-      213: -5288479432955165104
-    second: SR_Walk_Test-Sheet_6
-  - first:
-      213: 2782911595881501882
-    second: SR_Walk_Test-Sheet_7
+      213: 2338350238457407024
+    second: Lady_Glide_entrance-Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_0
+      name: Lady_Glide_entrance-Sheet_0
       rect:
         serializedVersion: 2
-        x: 31
+        x: 21
         y: 0
-        width: 75
-        height: 113
+        width: 97
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43ed728fdf8473300800000000000000
-      internalID: 231734161460158004
+      spriteID: cc7c72e1aa16b95a0800000000000000
+      internalID: -6513505052783032372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_1
+      name: Lady_Glide_entrance-Sheet_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 149
         y: 0
-        width: 64
-        height: 112
+        width: 97
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f30487920f8cd5f70800000000000000
-      internalID: 9177712549464391743
+      spriteID: 5c3e4c4e012db04b0800000000000000
+      internalID: -5473049952139287611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_2
+      name: Lady_Glide_entrance-Sheet_2
       rect:
         serializedVersion: 2
-        x: 291
+        x: 277
         y: 0
-        width: 60
-        height: 113
+        width: 97
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3f288937aa9258b0800000000000000
-      internalID: -5164895779625095365
+      spriteID: e9daf387f4c37e230800000000000000
+      internalID: 3667966733534080414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_3
+      name: Lady_Glide_entrance-Sheet_3
       rect:
         serializedVersion: 2
-        x: 410
+        x: 405
         y: 0
-        width: 73
-        height: 114
+        width: 97
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 252a825e9334d2410800000000000000
-      internalID: 1453892170647380562
+      spriteID: 340b11baf82c000b0800000000000000
+      internalID: -5764393600728059837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_4
+      name: Lady_Glide_entrance-Sheet_4
       rect:
         serializedVersion: 2
-        x: 534
+        x: 533
         y: 0
-        width: 80
-        height: 113
+        width: 97
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83cd7fabc3e5be450800000000000000
-      internalID: 6119088133640805432
+      spriteID: ba3fdecb43cd15080800000000000000
+      internalID: -9200330444675091541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_5
+      name: Lady_Glide_entrance-Sheet_5
       rect:
         serializedVersion: 2
-        x: 658
+        x: 661
         y: 0
-        width: 88
-        height: 112
+        width: 97
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 838fcbc0f6c6e0720800000000000000
-      internalID: 2814306041364019256
+      spriteID: e62db8349d5ef02b0800000000000000
+      internalID: -5616017489003818386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_6
+      name: Lady_Glide_entrance-Sheet_6
       rect:
         serializedVersion: 2
-        x: 790
+        x: 789
         y: 0
-        width: 78
-        height: 113
+        width: 97
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,30 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0568fbca9fb8b96b0800000000000000
-      internalID: -5288479432955165104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 922
-        y: 0
-        width: 70
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab415d91a53ee9620800000000000000
-      internalID: 2782911595881501882
+      spriteID: 03624bb172d737020800000000000000
+      internalID: 2338350238457407024
       vertices: []
       indices: 
       edges: []
@@ -310,14 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SR_Walk_Test-Sheet_0: 231734161460158004
-      SR_Walk_Test-Sheet_1: 9177712549464391743
-      SR_Walk_Test-Sheet_2: -5164895779625095365
-      SR_Walk_Test-Sheet_3: 1453892170647380562
-      SR_Walk_Test-Sheet_4: 6119088133640805432
-      SR_Walk_Test-Sheet_5: 2814306041364019256
-      SR_Walk_Test-Sheet_6: -5288479432955165104
-      SR_Walk_Test-Sheet_7: 2782911595881501882
+      Lady_Glide_entrance-Sheet_0: -6513505052783032372
+      Lady_Glide_entrance-Sheet_1: -5473049952139287611
+      Lady_Glide_entrance-Sheet_2: 3667966733534080414
+      Lady_Glide_entrance-Sheet_3: -5764393600728059837
+      Lady_Glide_entrance-Sheet_4: -9200330444675091541
+      Lady_Glide_entrance-Sheet_5: -5616017489003818386
+      Lady_Glide_entrance-Sheet_6: 2338350238457407024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

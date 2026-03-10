@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: 40fc2a82cbe42204787a7ef7c752912c
+guid: 6206c7842ffebdd419cd8444d4016265
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 231734161460158004
-    second: SR_Walk_Test-Sheet_0
+      213: -7789005480371723354
+    second: Lady_Test_anim-Sheet 1_0
   - first:
-      213: 9177712549464391743
-    second: SR_Walk_Test-Sheet_1
+      213: 4493463871627418111
+    second: Lady_Test_anim-Sheet 1_1
   - first:
-      213: -5164895779625095365
-    second: SR_Walk_Test-Sheet_2
+      213: 4433508031895824945
+    second: Lady_Test_anim-Sheet 1_2
   - first:
-      213: 1453892170647380562
-    second: SR_Walk_Test-Sheet_3
+      213: -4490250733466731286
+    second: Lady_Test_anim-Sheet 1_3
   - first:
-      213: 6119088133640805432
-    second: SR_Walk_Test-Sheet_4
+      213: -3191531782426123407
+    second: Lady_Test_anim-Sheet 1_4
   - first:
-      213: 2814306041364019256
-    second: SR_Walk_Test-Sheet_5
+      213: -3566529610564155542
+    second: Lady_Test_anim-Sheet 1_5
   - first:
-      213: -5288479432955165104
-    second: SR_Walk_Test-Sheet_6
+      213: -5020766436321843194
+    second: Lady_Test_anim-Sheet 1_6
   - first:
-      213: 2782911595881501882
-    second: SR_Walk_Test-Sheet_7
+      213: -5266346519917676891
+    second: Lady_Test_anim-Sheet 1_7
+  - first:
+      213: -8214414282151857365
+    second: Lady_Test_anim-Sheet 1_8
+  - first:
+      213: 9437666877304202
+    second: Lady_Test_anim-Sheet 1_9
+  - first:
+      213: -4675124288448333880
+    second: Lady_Test_anim-Sheet 1_10
+  - first:
+      213: 5794174995926305766
+    second: Lady_Test_anim-Sheet 1_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,34 +133,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_0
+      name: Lady_Test_anim-Sheet 1_0
       rect:
         serializedVersion: 2
-        x: 31
+        x: 28
         y: 0
-        width: 75
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43ed728fdf8473300800000000000000
-      internalID: 231734161460158004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 64
+        width: 83
         height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f30487920f8cd5f70800000000000000
-      internalID: 9177712549464391743
+      spriteID: 6a36fd498c4e7e390800000000000000
+      internalID: -7789005480371723354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_2
+      name: Lady_Test_anim-Sheet 1_1
       rect:
         serializedVersion: 2
-        x: 291
+        x: 156
         y: 0
-        width: 60
-        height: 113
+        width: 83
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3f288937aa9258b0800000000000000
-      internalID: -5164895779625095365
+      spriteID: ff95767759dfb5e30800000000000000
+      internalID: 4493463871627418111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_3
+      name: Lady_Test_anim-Sheet 1_2
       rect:
         serializedVersion: 2
-        x: 410
+        x: 283
         y: 0
-        width: 73
-        height: 114
+        width: 90
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +192,130 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 252a825e9334d2410800000000000000
-      internalID: 1453892170647380562
+      spriteID: 13aedf5b01cf68d30800000000000000
+      internalID: 4433508031895824945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_4
+      name: Lady_Test_anim-Sheet 1_3
       rect:
         serializedVersion: 2
-        x: 534
+        x: 411
+        y: 0
+        width: 89
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec374f8fbc6fa1c0800000000000000
+      internalID: -4490250733466731286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_Test_anim-Sheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 74
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1732f1bd0c665b3d0800000000000000
+      internalID: -3191531782426123407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_Test_anim-Sheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 0
+        width: 77
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6749692734218ec0800000000000000
+      internalID: -3566529610564155542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_Test_anim-Sheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 0
+        width: 87
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60825def687a25ab0800000000000000
+      internalID: -5020766436321843194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_Test_anim-Sheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 86
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a631301ebd2ae6b0800000000000000
+      internalID: -5266346519917676891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_Test_anim-Sheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 1053
         y: 0
         width: 80
-        height: 113
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,19 +324,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83cd7fabc3e5be450800000000000000
-      internalID: 6119088133640805432
+      spriteID: b2371727bb9800e80800000000000000
+      internalID: -8214414282151857365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_5
+      name: Lady_Test_anim-Sheet 1_9
       rect:
         serializedVersion: 2
-        x: 658
+        x: 1179
         y: 0
-        width: 88
+        width: 86
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8deabd0287812000800000000000000
+      internalID: 9437666877304202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_Test_anim-Sheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 0
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c77c32ca3f9e1fb0800000000000000
+      internalID: -4675124288448333880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_Test_anim-Sheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 0
+        width: 83
         height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,52 +390,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 838fcbc0f6c6e0720800000000000000
-      internalID: 2814306041364019256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 790
-        y: 0
-        width: 78
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0568fbca9fb8b96b0800000000000000
-      internalID: -5288479432955165104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 922
-        y: 0
-        width: 70
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab415d91a53ee9620800000000000000
-      internalID: 2782911595881501882
+      spriteID: 6eb43aeb57b096050800000000000000
+      internalID: 5794174995926305766
       vertices: []
       indices: 
       edges: []
@@ -310,14 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SR_Walk_Test-Sheet_0: 231734161460158004
-      SR_Walk_Test-Sheet_1: 9177712549464391743
-      SR_Walk_Test-Sheet_2: -5164895779625095365
-      SR_Walk_Test-Sheet_3: 1453892170647380562
-      SR_Walk_Test-Sheet_4: 6119088133640805432
-      SR_Walk_Test-Sheet_5: 2814306041364019256
-      SR_Walk_Test-Sheet_6: -5288479432955165104
-      SR_Walk_Test-Sheet_7: 2782911595881501882
+      Lady_Test_anim-Sheet 1_0: -7789005480371723354
+      Lady_Test_anim-Sheet 1_1: 4493463871627418111
+      Lady_Test_anim-Sheet 1_10: -4675124288448333880
+      Lady_Test_anim-Sheet 1_11: 5794174995926305766
+      Lady_Test_anim-Sheet 1_2: 4433508031895824945
+      Lady_Test_anim-Sheet 1_3: -4490250733466731286
+      Lady_Test_anim-Sheet 1_4: -3191531782426123407
+      Lady_Test_anim-Sheet 1_5: -3566529610564155542
+      Lady_Test_anim-Sheet 1_6: -5020766436321843194
+      Lady_Test_anim-Sheet 1_7: -5266346519917676891
+      Lady_Test_anim-Sheet 1_8: -8214414282151857365
+      Lady_Test_anim-Sheet 1_9: 9437666877304202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

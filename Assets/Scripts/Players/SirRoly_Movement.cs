@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
@@ -106,12 +107,12 @@ public class SirRoly_Movement : MonoBehaviour
 
         GameObject swordObj = Instantiate(sword, swordSpawn.position, swordSpawn.rotation, swordSpawn);
 
-        Sword swing = swordObj.GetComponent<Sword>();
+        //Sword swing = swordObj.GetComponent<Sword>();
 
-        if (swing != null)
+        /*if (swing != null)
         {
             swing.Init(facingRight);
-        }
+        }*/
     }
 
     private void Reset()
