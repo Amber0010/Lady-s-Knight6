@@ -155,10 +155,10 @@ GameObject:
   m_Component:
   - component: {fileID: 312274581493193659}
   - component: {fileID: 2732072648458437069}
-  - component: {fileID: 2513201138399513341}
   - component: {fileID: 1222665552617902769}
   - component: {fileID: 1731631321413682216}
   - component: {fileID: 2665867979033016753}
+  - component: {fileID: 1567794500603084427}
   m_Layer: 0
   m_Name: LadyBug
   m_TagString: LadyBug
@@ -219,18 +219,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.026297836, y: -0.26272923}
   m_Radius: 0.37954223
---- !u!114 &2513201138399513341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553372962377755940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8a5a2330a20e445804334fe8b6dce9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Collector
 --- !u!50 &1222665552617902769
 Rigidbody2D:
   serializedVersion: 5
@@ -315,3 +303,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0.07028136, y: -0.12424815}
   m_Size: {x: 0.33173293, y: 1.0565392}
   m_Direction: 0
+--- !u!114 &1567794500603084427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553372962377755940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8a5a2330a20e445804334fe8b6dce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collector
