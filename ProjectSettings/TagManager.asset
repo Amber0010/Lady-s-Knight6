@@ -2,15 +2,13 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-<<<<<<< Updated upstream
-  serializedVersion: 2
-  tags: []
-=======
   serializedVersion: 3
   tags:
   - SirRoly
   - LadyBug
->>>>>>> Stashed changes
+  - SparkleInteract
+  - Sword
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -45,6 +43,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tilemap
+    uniqueID: 3700373771
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Front
+    uniqueID: 946098985
+    locked: 0
+  m_RenderingLayers:
+  - Default
