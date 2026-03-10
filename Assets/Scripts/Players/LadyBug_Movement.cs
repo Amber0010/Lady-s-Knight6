@@ -66,6 +66,9 @@ public class LadyBug_Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
+            if (rb.velocityY <= 0){
+                rb.gravity
+            }
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
 
