@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 40fc2a82cbe42204787a7ef7c752912c
+guid: d63d30e06b3d37f4e8e1498cf6f50ee7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 231734161460158004
-    second: SR_Walk_Test-Sheet_0
+      213: -5892240409958361787
+    second: Lady_idle-Recovered-Sheet_0
   - first:
-      213: 9177712549464391743
-    second: SR_Walk_Test-Sheet_1
+      213: 2111972550139598331
+    second: Lady_idle-Recovered-Sheet_1
   - first:
-      213: -5164895779625095365
-    second: SR_Walk_Test-Sheet_2
+      213: -4553043240276129777
+    second: Lady_idle-Recovered-Sheet_2
   - first:
-      213: 1453892170647380562
-    second: SR_Walk_Test-Sheet_3
+      213: 6302972168539438571
+    second: Lady_idle-Recovered-Sheet_3
   - first:
-      213: 6119088133640805432
-    second: SR_Walk_Test-Sheet_4
+      213: -1504564307821742802
+    second: Lady_idle-Recovered-Sheet_4
   - first:
-      213: 2814306041364019256
-    second: SR_Walk_Test-Sheet_5
+      213: -869918889070370982
+    second: Lady_idle-Recovered-Sheet_5
   - first:
-      213: -5288479432955165104
-    second: SR_Walk_Test-Sheet_6
+      213: 878144977363120632
+    second: Lady_idle-Recovered-Sheet_6
   - first:
-      213: 2782911595881501882
-    second: SR_Walk_Test-Sheet_7
+      213: -6818162780057830674
+    second: Lady_idle-Recovered-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_0
+      name: Lady_idle-Recovered-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43ed728fdf8473300800000000000000
-      internalID: 231734161460158004
+      spriteID: 545da39c09e8a3ea0800000000000000
+      internalID: -5892240409958361787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_1
+      name: Lady_idle-Recovered-Sheet_1
       rect:
         serializedVersion: 2
         x: 128
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f30487920f8cd5f70800000000000000
-      internalID: 9177712549464391743
+      spriteID: bf5527a38db3f4d10800000000000000
+      internalID: 2111972550139598331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_2
+      name: Lady_idle-Recovered-Sheet_2
       rect:
         serializedVersion: 2
         x: 256
@@ -180,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3f288937aa9258b0800000000000000
-      internalID: -5164895779625095365
+      spriteID: f080958cb4750d0c0800000000000000
+      internalID: -4553043240276129777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_3
+      name: Lady_idle-Recovered-Sheet_3
       rect:
         serializedVersion: 2
         x: 384
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 252a825e9334d2410800000000000000
-      internalID: 1453892170647380562
+      spriteID: bed77feeac7a87750800000000000000
+      internalID: 6302972168539438571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_4
+      name: Lady_idle-Recovered-Sheet_4
       rect:
         serializedVersion: 2
         x: 512
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83cd7fabc3e5be450800000000000000
-      internalID: 6119088133640805432
+      spriteID: e25bd8acbb6be1be0800000000000000
+      internalID: -1504564307821742802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_5
+      name: Lady_idle-Recovered-Sheet_5
       rect:
         serializedVersion: 2
         x: 640
@@ -246,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 838fcbc0f6c6e0720800000000000000
-      internalID: 2814306041364019256
+      spriteID: a5fde81216d6de3f0800000000000000
+      internalID: -869918889070370982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_6
+      name: Lady_idle-Recovered-Sheet_6
       rect:
         serializedVersion: 2
         x: 768
@@ -268,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0568fbca9fb8b96b0800000000000000
-      internalID: -5288479432955165104
+      spriteID: 8f1b50d443ccf2c00800000000000000
+      internalID: 878144977363120632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_7
+      name: Lady_idle-Recovered-Sheet_7
       rect:
         serializedVersion: 2
         x: 896
@@ -290,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab415d91a53ee9620800000000000000
-      internalID: 2782911595881501882
+      spriteID: eeafcd163150161a0800000000000000
+      internalID: -6818162780057830674
       vertices: []
       indices: 
       edges: []
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ab469f514e83f1045974c61f42d7a245
+    spriteID: b02989b1783c6cc43947be9aead9118a
     internalID: 0
     vertices: []
     indices: 
@@ -312,14 +312,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SR_Walk_Test-Sheet_0: 231734161460158004
-      SR_Walk_Test-Sheet_1: 9177712549464391743
-      SR_Walk_Test-Sheet_2: -5164895779625095365
-      SR_Walk_Test-Sheet_3: 1453892170647380562
-      SR_Walk_Test-Sheet_4: 6119088133640805432
-      SR_Walk_Test-Sheet_5: 2814306041364019256
-      SR_Walk_Test-Sheet_6: -5288479432955165104
-      SR_Walk_Test-Sheet_7: 2782911595881501882
+      Lady_idle-Recovered-Sheet_0: -5892240409958361787
+      Lady_idle-Recovered-Sheet_1: 2111972550139598331
+      Lady_idle-Recovered-Sheet_2: -4553043240276129777
+      Lady_idle-Recovered-Sheet_3: 6302972168539438571
+      Lady_idle-Recovered-Sheet_4: -1504564307821742802
+      Lady_idle-Recovered-Sheet_5: -869918889070370982
+      Lady_idle-Recovered-Sheet_6: 878144977363120632
+      Lady_idle-Recovered-Sheet_7: -6818162780057830674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

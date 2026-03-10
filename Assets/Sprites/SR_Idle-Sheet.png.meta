@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 40fc2a82cbe42204787a7ef7c752912c
+guid: 0ec73ea7bc33cdf4a8e97d2d7257abe9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 231734161460158004
-    second: SR_Walk_Test-Sheet_0
+      213: 3559973674893018952
+    second: SR_Idle-Sheet_0
   - first:
-      213: 9177712549464391743
-    second: SR_Walk_Test-Sheet_1
+      213: -8359812637789812405
+    second: SR_Idle-Sheet_1
   - first:
-      213: -5164895779625095365
-    second: SR_Walk_Test-Sheet_2
+      213: 2068525777279704718
+    second: SR_Idle-Sheet_2
   - first:
-      213: 1453892170647380562
-    second: SR_Walk_Test-Sheet_3
+      213: -8148838073653441610
+    second: SR_Idle-Sheet_3
   - first:
-      213: 6119088133640805432
-    second: SR_Walk_Test-Sheet_4
+      213: -242811297757127743
+    second: SR_Idle-Sheet_4
   - first:
-      213: 2814306041364019256
-    second: SR_Walk_Test-Sheet_5
+      213: 4896232495801682727
+    second: SR_Idle-Sheet_5
   - first:
-      213: -5288479432955165104
-    second: SR_Walk_Test-Sheet_6
+      213: 7258218407128935514
+    second: SR_Idle-Sheet_6
   - first:
-      213: 2782911595881501882
-    second: SR_Walk_Test-Sheet_7
+      213: -5420756164109252510
+    second: SR_Idle-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_0
+      name: SR_Idle-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43ed728fdf8473300800000000000000
-      internalID: 231734161460158004
+      spriteID: 8478dbd1231976130800000000000000
+      internalID: 3559973674893018952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_1
+      name: SR_Idle-Sheet_1
       rect:
         serializedVersion: 2
         x: 128
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f30487920f8cd5f70800000000000000
-      internalID: 9177712549464391743
+      spriteID: b4987b7b2bafbfb80800000000000000
+      internalID: -8359812637789812405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_2
+      name: SR_Idle-Sheet_2
       rect:
         serializedVersion: 2
         x: 256
@@ -180,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3f288937aa9258b0800000000000000
-      internalID: -5164895779625095365
+      spriteID: e8ede732c31e4bc10800000000000000
+      internalID: 2068525777279704718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_3
+      name: SR_Idle-Sheet_3
       rect:
         serializedVersion: 2
         x: 384
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 252a825e9334d2410800000000000000
-      internalID: 1453892170647380562
+      spriteID: 6bb45b742f289ee80800000000000000
+      internalID: -8148838073653441610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_4
+      name: SR_Idle-Sheet_4
       rect:
         serializedVersion: 2
         x: 512
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83cd7fabc3e5be450800000000000000
-      internalID: 6119088133640805432
+      spriteID: 1cb1cb1496c51acf0800000000000000
+      internalID: -242811297757127743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_5
+      name: SR_Idle-Sheet_5
       rect:
         serializedVersion: 2
         x: 640
@@ -246,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 838fcbc0f6c6e0720800000000000000
-      internalID: 2814306041364019256
+      spriteID: 72bcbf97389e2f340800000000000000
+      internalID: 4896232495801682727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_6
+      name: SR_Idle-Sheet_6
       rect:
         serializedVersion: 2
         x: 768
@@ -268,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0568fbca9fb8b96b0800000000000000
-      internalID: -5288479432955165104
+      spriteID: a5c2f138f2f5ab460800000000000000
+      internalID: 7258218407128935514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SR_Walk_Test-Sheet_7
+      name: SR_Idle-Sheet_7
       rect:
         serializedVersion: 2
         x: 896
@@ -290,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab415d91a53ee9620800000000000000
-      internalID: 2782911595881501882
+      spriteID: 26842483dfa95c4b0800000000000000
+      internalID: -5420756164109252510
       vertices: []
       indices: 
       edges: []
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ab469f514e83f1045974c61f42d7a245
+    spriteID: ad97e7952bead5f48a7f721df5a9e55c
     internalID: 0
     vertices: []
     indices: 
@@ -312,14 +312,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SR_Walk_Test-Sheet_0: 231734161460158004
-      SR_Walk_Test-Sheet_1: 9177712549464391743
-      SR_Walk_Test-Sheet_2: -5164895779625095365
-      SR_Walk_Test-Sheet_3: 1453892170647380562
-      SR_Walk_Test-Sheet_4: 6119088133640805432
-      SR_Walk_Test-Sheet_5: 2814306041364019256
-      SR_Walk_Test-Sheet_6: -5288479432955165104
-      SR_Walk_Test-Sheet_7: 2782911595881501882
+      SR_Idle-Sheet_0: 3559973674893018952
+      SR_Idle-Sheet_1: -8359812637789812405
+      SR_Idle-Sheet_2: 2068525777279704718
+      SR_Idle-Sheet_3: -8148838073653441610
+      SR_Idle-Sheet_4: -242811297757127743
+      SR_Idle-Sheet_5: 4896232495801682727
+      SR_Idle-Sheet_6: 7258218407128935514
+      SR_Idle-Sheet_7: -5420756164109252510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

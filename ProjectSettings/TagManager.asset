@@ -6,7 +6,9 @@ TagManager:
   tags:
   - SirRoly
   - LadyBug
+  - SparkleInteract
   - Sword
+  - Floor
   layers:
   - Default
   - TransparentFX
