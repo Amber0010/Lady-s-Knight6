@@ -15,10 +15,13 @@ public class SirRoly_Movement : MonoBehaviour
     public GameObject rolledState;
 
     public GameObject sword;
-    public Transform swordSpawn;
+    public Transform swordSpawnLeft;
+    public Transform swordSpawnRight;
 
     private Animator animator;
-
+    
+    public bool canJump = true;
+    
     private SpriteRenderer spriteRenderer;
     private bool facingRight = true;
 
@@ -33,17 +36,29 @@ public class SirRoly_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float move = Input.GetAxisRaw("Horizontal_Roly");
+        float move = 0f;
 
         if (Input.GetKey(KeyCode.J))
         {
-            rb.AddForce(Vector2.left * speed, ForceMode2D.Force);
-            //transform.position -= transform.right * Time.deltaTime * speed;
+            move = -1f;
+            rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
+            if (isRolled)
+            {
+                rb.AddForce(Vector2.left * .5f, ForceMode2D.Force);
+            }
         }
-        if (Input.GetKey(KeyCode.L))
+        else if (Input.GetKey(KeyCode.L))
         {
-            rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
-            //transform.position += transform.right * Time.deltaTime * speed;
+            move = 1f;
+            rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
+            if (isRolled)
+            {
+                rb.AddForce(Vector2.right * .5f, ForceMode2D.Force);
+            }
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
         }
 
         if (move > 0)
@@ -59,9 +74,11 @@ public class SirRoly_Movement : MonoBehaviour
 
         animator.SetBool("isWalking", move != 0);
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && canJump && !isRolled)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+            animator.SetTrigger("Jump");
+            canJump = false;
         }
         if (Input.GetKeyDown(KeyCode.U))
         {
@@ -104,7 +121,20 @@ public class SirRoly_Movement : MonoBehaviour
     {
         if (sword == null) return;
 
-        GameObject swordObj = Instantiate(sword, swordSpawn.position, swordSpawn.rotation, swordSpawn);
+        GameObject swordObj;
+
+        if (facingRight)
+        {
+             swordObj = Instantiate(sword, swordSpawnRight.position, swordSpawnRight.rotation, swordSpawnRight);
+        }
+        if (!facingRight)
+        {
+            swordObj = Instantiate(sword, swordSpawnLeft.position, swordSpawnLeft.rotation, swordSpawnLeft);
+        }
+        else
+        {
+            swordObj = Instantiate(sword, swordSpawnRight.position, swordSpawnRight.rotation, swordSpawnRight);
+        }
 
         Sword swing = swordObj.GetComponent<Sword>();
 
@@ -119,4 +149,7 @@ public class SirRoly_Movement : MonoBehaviour
         rb = GetComponentInChildren<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
     }
+
 }
+
+
