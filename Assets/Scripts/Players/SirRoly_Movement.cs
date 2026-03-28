@@ -90,7 +90,7 @@ public class SirRoly_Movement : MonoBehaviour
         {
             SpawnSword();
         }
-    }
+    } 
     public bool IsRolled()
     {
         return isRolled;
