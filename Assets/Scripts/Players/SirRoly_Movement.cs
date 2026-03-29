@@ -44,7 +44,7 @@ public class SirRoly_Movement : MonoBehaviour
             rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
             if (isRolled)
             {
-                rb.AddForce(Vector2.left * .5f, ForceMode2D.Force);
+                rb.AddForce(Vector2.left * 3.5f, ForceMode2D.Force);
             }
         }
         else if (Input.GetKey(KeyCode.L))
@@ -53,7 +53,7 @@ public class SirRoly_Movement : MonoBehaviour
             rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
             if (isRolled)
             {
-                rb.AddForce(Vector2.right * .5f, ForceMode2D.Force);
+                rb.AddForce(Vector2.right * 3.5f, ForceMode2D.Force);
             }
         }
         else
@@ -72,7 +72,10 @@ public class SirRoly_Movement : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
-        animator.SetBool("isWalking", move != 0);
+        if (!isRolled)
+        {
+            animator.SetBool("isWalking", move != 0);
+        }
 
         if (Input.GetKeyDown(KeyCode.I) && canJump && !isRolled)
         {
