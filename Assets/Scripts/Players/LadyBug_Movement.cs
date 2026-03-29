@@ -20,7 +20,7 @@ public class LadyBug_Movement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     public GameObject sparkleSpell;
-    public float sparkleDuration = .5f;
+    public float sparkleDuration = 1f;
     private bool canJump = true;
     public string sparkleInteract = "SparkleInteract";
 
@@ -66,8 +66,8 @@ public class LadyBug_Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
-            if (rb.velocityY <= 0){
-                rb.gravity
+            if (rb.linearVelocityY <= 0){
+                rb.gravityScale=startGravity;
             }
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
