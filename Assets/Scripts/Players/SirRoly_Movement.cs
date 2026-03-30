@@ -10,6 +10,7 @@ public class SirRoly_Movement : MonoBehaviour
     Rigidbody2D rb;
 
     public bool isRolled = false;
+    public bool canJump = true;
 
     public GameObject normalState;
     public GameObject rolledState;
@@ -19,9 +20,6 @@ public class SirRoly_Movement : MonoBehaviour
     public Transform swordSpawnRight;
 
     private Animator animator;
-    
-    public bool canJump = true;
-    
     private SpriteRenderer spriteRenderer;
     private bool facingRight = true;
 
@@ -77,8 +75,8 @@ public class SirRoly_Movement : MonoBehaviour
             animator.SetBool("isWalking", move != 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.I) && canJump && !isRolled)
-        {
+        if (Input.GetKeyDown(KeyCode.I) && rb.linearVelocityY==0 && !isRolled)
+        {   
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
             canJump = false;
