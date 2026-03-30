@@ -157,8 +157,10 @@ GameObject:
   - component: {fileID: 2732072648458437069}
   - component: {fileID: 1222665552617902769}
   - component: {fileID: 1731631321413682216}
+  - component: {fileID: 4813449587000639444}
   - component: {fileID: 2665867979033016753}
   - component: {fileID: 1567794500603084427}
+  - component: {fileID: 6237610099202273565}
   m_Layer: 0
   m_Name: LadyBug
   m_TagString: LadyBug
@@ -262,10 +264,24 @@ MonoBehaviour:
   jumpForce: 8
   interactRange: 3
   detectionRange: 2
-  SparkleMagic: {fileID: 576518343139966432, guid: b2d167541248cf84481565a8f7461606, type: 3}
+  sparkleDur: 0.05
   sparkleSpell: {fileID: 0}
   sparkleDuration: 0.5
   sparkleInteract: SparkleInteract
+--- !u!114 &4813449587000639444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553372962377755940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527141674449ea8458157ee02aa5bf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LadyJump
+  myClipA: {fileID: 8300000, guid: aaa669ccb869d3042a350c23c68c52a4, type: 3}
+  myClipB: {fileID: 8300000, guid: c21e0f40d923d92479d00855bf4e285a, type: 3}
 --- !u!70 &2665867979033016753
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -315,3 +331,100 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8a5a2330a20e445804334fe8b6dce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collector
+--- !u!82 &6237610099202273565
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553372962377755940}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
