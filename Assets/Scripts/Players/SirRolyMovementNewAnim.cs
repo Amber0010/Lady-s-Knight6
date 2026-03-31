@@ -1,16 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
 
-public class SirRoly_Movement : MonoBehaviour
+public class SirRolyMovementNewAnim : MonoBehaviour
 {
     public float speed = 5f;
     public float jumpForce = 2f;
     Rigidbody2D rb;
 
     public bool isRolled = false;
-    public bool canJump = true;
 
     public GameObject normalState;
     public GameObject rolledState;
@@ -72,14 +72,15 @@ public class SirRoly_Movement : MonoBehaviour
 
         if (!isRolled)
         {
-            animator.SetBool("isWalking", move != 0);
+            animator.SetFloat("xVelocity", Math.Abs(rb.linearVelocity.x));
+            animator.SetFloat("yVelocity", rb.linearVelocity.y);
+            //animator.SetBool("isJumping", !canJump);
         }
 
-        if (Input.GetKeyDown(KeyCode.I) && rb.linearVelocityY == 0 && !isRolled)
-        {   
+        if (Input.GetKeyDown(KeyCode.I) && rb.linearVelocity.y == 0 && !isRolled)
+        {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
-            canJump = false;
         }
         if (Input.GetKeyDown(KeyCode.U))
         {
@@ -91,7 +92,7 @@ public class SirRoly_Movement : MonoBehaviour
         {
             SpawnSword();
         }
-    } 
+    }
     public bool IsRolled()
     {
         return isRolled;
@@ -126,7 +127,7 @@ public class SirRoly_Movement : MonoBehaviour
 
         if (facingRight)
         {
-             swordObj = Instantiate(sword, swordSpawnRight.position, swordSpawnRight.rotation, swordSpawnRight);
+            swordObj = Instantiate(sword, swordSpawnRight.position, swordSpawnRight.rotation, swordSpawnRight);
         }
         if (!facingRight)
         {
@@ -152,5 +153,3 @@ public class SirRoly_Movement : MonoBehaviour
     }
 
 }
-
-

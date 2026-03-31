@@ -8,103 +8,74 @@ public class Ramp_Plant : MonoBehaviour
     public GameObject before;
     public GameObject after;
 
-    private Animator beforeAnimator;
-    private Animator afterAnimator;
+    public Animator beforeAnimator;
+    public Animator afterAnimator;
 
     private Vector3 beforePos;
-    private Vector3 originalBeforePos;
+    public Vector3 originalBeforePos;
     private Vector3 afterPos;
-    private Vector3 originalAfterPos;
+    public Vector3 originalAfterPos;
 
-    private bool isTransitioning = false;
-    private bool goingToAfter = true;
+    public bool moving = false;
+    public float moveSpeed = 2.0f;
+    public float rotateSpeed = 3.0f;
 
-    private Vector3 velocity = Vector3.zero;
+    public Quaternion originalBeforeRotation;
+    public Quaternion originalAfterRotation;
+    //private Vector3 velocity = Vector3.zero;
 
     void Start()
     {
         beforePos = before.transform.position;
         afterPos = after.transform.position;
 
-        originalBeforePos = before.transform.position;
-        originalAfterPos = after.transform.position;
+        originalBeforePos = beforePos;
+        originalAfterPos = afterPos;
+
+        originalBeforeRotation = before.transform.localRotation;
+        originalAfterRotation = after.transform.localRotation;
 
         beforeAnimator = before.GetComponent<Animator>();
         afterAnimator = after.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (!isTransitioning) return;
-
-        if (goingToAfter)
-        {
-            before.transform.position = Vector3.SmoothDamp(before.transform.position, afterPos, ref velocity, 0.5f);
-        }
-        else
-        {
-            after.transform.position = Vector3.SmoothDamp(after.transform.position, beforePos, ref velocity, 0.5f);
-        }
-    }
-        //if (!before.activeInHierarchy)
-        //{
-        //    transform.position = originalBeforePos;
-        //}
-        //if (!after.activeInHierarchy)
-        //{
-        //    transform.position = originalAfterPos;
-        //}
-    void OnSparkleHit()
-    {
-        if (isTransitioning) return;
-
-        isTransitioning = true;
-
-        if (before.activeInHierarchy)
-        {
-            goingToAfter = true;
-            beforeAnimator.SetTrigger("Sparkle");
-        }
-        else
-        {
-            goingToAfter = false;
-            afterAnimator.SetTrigger("Sparkle");
-        }
-        //if(before.activeInHierarchy && beforeAnimator != null)
-        //{
-        //    beforeAnimator.SetTrigger("Sparkle");
-        //    before.transform.position = Vector3.SmoothDamp(before.transform.position, after.transform.position, ref velocity, 0.15f);
-        //}
-        //if (after.activeInHierarchy && afterAnimator != null)
-        //{
-        //    afterAnimator.SetTrigger("Sparkle");
-        //    after.transform.position = Vector3.SmoothDamp(after.transform.position, before.transform.position, ref velocity, 0.15f);
-        //}
-    }
     public void FinishTransition()
     {
         Debug.Log("FinishTransition called");
 
-        if (goingToAfter)
+        if (before.activeInHierarchy)
         {
-            before.SetActive(false);
             after.SetActive(true);
+            before.SetActive(false);
+            moving = false;
+            after.GetComponent<Collider2D>().enabled = true;
+            before.transform.position = originalBeforePos;
+            before.transform.localRotation = originalBeforeRotation;
         }
-        else
+        else if (after.activeInHierarchy)
         {
-            after.SetActive(false);
             before.SetActive(true);
+            after.SetActive(false);
+            moving = false;
+            after.transform.position = originalAfterPos;
+            after.transform.localRotation = originalAfterRotation;
         }
-
-        isTransitioning = false;
     }
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnSparkleHit()
     {
-        if (other.gameObject.tag == "Magic")
+        if (before.activeInHierarchy && beforeAnimator != null)
         {
-            Destroy(other.gameObject);
-            //OnSparkleHit();
+            beforeAnimator.SetTrigger("Sparkle");
+            moving = true;
+
+            //before.transform.position = Vector3.SmoothDamp(before.transform.position, after.transform.position, ref velocity, 0.15f);
+        }
+        if (after.activeInHierarchy && afterAnimator != null)
+        {
+            afterAnimator.SetTrigger("Sparkle");
+            after.GetComponent<Collider2D>().enabled = false;
+            moving = true;
+            //after.transform.position = Vector3.SmoothDamp(after.transform.position, before.transform.position, ref velocity, 0.15f);
         }
     }
 }
