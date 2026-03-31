@@ -55,5 +55,8 @@ TagManager:
   - name: UI
     uniqueID: 168380867
     locked: 0
+  - name: LampPlant
+    uniqueID: 4118707161
+    locked: 0
   m_RenderingLayers:
   - Default

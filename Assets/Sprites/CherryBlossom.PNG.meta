@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9940d396c1b24a3419cdc48bdca73a56
+guid: 122967727d065904c85de0e69f12a601
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 661516946431730253
-    second: Wisteria_0
+      213: 3072658423434902756
+    second: CherryBlossom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wisteria_0
+      name: CherryBlossom_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 15
+        y: 0
         width: 64
-        height: 49
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d42e6fc682e2e2900800000000000000
-      internalID: 661516946431730253
+      spriteID: 4ecf2f47e8644aa20800000000000000
+      internalID: 3072658423434902756
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1af29fe962e7a904f8bc486f3d1c9e62
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +133,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Wisteria_0: 661516946431730253
+      CherryBlossom_0: 3072658423434902756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
