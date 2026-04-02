@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8957577113254186581}
-  - component: {fileID: 407521377589757128}
+  - component: {fileID: 6769201999134013766}
   m_Layer: 0
   m_Name: SIrRolyController
   m_TagString: SirRoly
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 5670856898462322827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &407521377589757128
+--- !u!114 &6769201999134013766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,9 +43,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1796542000995949273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3f7f012fb301d438f75b1aed0882a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 292578a2f56052546be5d533e85b6ad6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SirRolyMovementNewAnim
+  m_EditorClassIdentifier: Assembly-CSharp::SirRoly_Movement
   speed: 2
   jumpForce: 6
   isRolled: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
   sword: {fileID: 3292407905698205933, guid: 80844698ac2e316458a013256a9ad7d6, type: 3}
   swordSpawnLeft: {fileID: 1528062551118070386}
   swordSpawnRight: {fileID: 190423466058525294}
+  canJump: 1
 --- !u!1 &2428956369044607519
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,8 +330,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.0639562}
-  m_Size: {x: 0.5, y: 1.1279124}
+  m_Offset: {x: 0, y: -0.08439714}
+  m_Size: {x: 0.5, y: 1.1687943}
   m_Direction: 0
 --- !u!114 &2787607618202932243
 MonoBehaviour:
@@ -422,12 +423,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -701595729
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -334549523355427435, guid: a1d7cbe76cc13a14d826593266ff0d59, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6459593, g: 0.71584207, b: 0.7207546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -446,7 +447,7 @@ Animator:
   m_GameObject: {fileID: 4878626045082540605}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 28cf2f49113939148b6515fbd10d4185, type: 2}
+  m_Controller: {fileID: 9100000, guid: 13e9d0c9ba9f5bc4482a2157d25556ef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

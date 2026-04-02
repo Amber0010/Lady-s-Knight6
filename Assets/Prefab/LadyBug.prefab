@@ -78,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -701595729
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5892240409958361787, guid: d63d30e06b3d37f4e8e1498cf6f50ee7, type: 3}
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 0.83, y: 1.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 1342555545998466324}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c181f9124746d8d4a9e2b5237120a828, type: 2}
+  m_Controller: {fileID: 9100000, guid: 640488e65383f144e959af73f1cff3cb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -156,9 +156,9 @@ GameObject:
   - component: {fileID: 312274581493193659}
   - component: {fileID: 2732072648458437069}
   - component: {fileID: 1222665552617902769}
+  - component: {fileID: 1731631321413682216}
   - component: {fileID: 2665867979033016753}
   - component: {fileID: 1567794500603084427}
-  - component: {fileID: 6528598447807164560}
   m_Layer: 0
   m_Name: LadyBug
   m_TagString: LadyBug
@@ -246,6 +246,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1731631321413682216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553372962377755940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f994dd9a3a04d46b3c561c47017e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LadyBug_Movemtn
+  speed: 2
+  jumpForce: 8
+  interactRange: 3
+  detectionRange: 2
+  SparkleMagic: {fileID: 576518343139966432, guid: b2d167541248cf84481565a8f7461606, type: 3}
+  sparkleSpell: {fileID: 0}
+  sparkleDuration: 0.5
+  sparkleInteract: SparkleInteract
 --- !u!70 &2665867979033016753
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -295,23 +315,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8a5a2330a20e445804334fe8b6dce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collector
---- !u!114 &6528598447807164560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553372962377755940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41ea08f952f94f4ea404f9c5e2482f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LadyBugMovementNewAnim
-  speed: 2
-  jumpForce: 8
-  interactRange: 3
-  detectionRange: 2
-  sparkleDur: 0.05
-  sparkleSpell: {fileID: 7714192173956001571, guid: 88d48a7b66ab63b48b46209d11852d1a, type: 3}
-  sparkleDuration: 0.5
-  sparkleInteract: SparkleInteract
