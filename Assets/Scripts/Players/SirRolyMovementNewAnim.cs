@@ -90,6 +90,7 @@ public class SirRolyMovementNewAnim : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.O) && !isRolled)
         {
+            animator.SetTrigger("Attack");
             SpawnSword();
         }
     }

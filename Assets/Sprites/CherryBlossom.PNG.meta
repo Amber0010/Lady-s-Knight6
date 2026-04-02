@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 70ee898e28f4a87448f963ad914a3156
+guid: b67f1665f10bd344080c3a6e6c720ab1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2492652386671038959
-    second: FullWeb_0
+      213: 3072658423434902756
+    second: CherryBlossom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FullWeb_0
+      name: CherryBlossom_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 63
-        height: 64
+        x: 0
+        y: 7
+        width: 52
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe19e08932ea79220800000000000000
-      internalID: 2492652386671038959
+      spriteID: 4ecf2f47e8644aa20800000000000000
+      internalID: 3072658423434902756
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FullWeb_0: 2492652386671038959
+      CherryBlossom_0: 3072658423434902756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

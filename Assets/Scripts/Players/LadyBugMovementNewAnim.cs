@@ -11,13 +11,13 @@ public class LadyBugMovementNewAnim : MonoBehaviour
 
     public float sparkleDur = 0.05f;
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     bool RightFacing = true;
     private float glideSpeed = -1.5f;
     private float startGravity;
 
     private Animator animator;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
     public GameObject sparkleSpell;
     public float sparkleDuration = 1f;
@@ -79,6 +79,7 @@ public class LadyBugMovementNewAnim : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             CastSparkle();
+            animator.SetTrigger("Attack");
         }
         if (Input.GetKey(KeyCode.W) && rb.linearVelocityY <= 0)
         {
