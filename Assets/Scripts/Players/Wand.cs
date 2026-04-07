@@ -93,7 +93,7 @@ public class Wand : MonoBehaviour
             transform.localPosition = Vector3.Lerp(-dir * animEndPos, normalPos, time / duration);
             float baseZ = animStartRotation.eulerAngles.z;
             float deltaZ = animEndRotation.eulerAngles.z - baseZ;
-            float z = baseZ + -dir * deltaZ * (time / duration);
+            float z = baseZ + (-dir * deltaZ * (time / duration));
             transform.localRotation = Quaternion.Euler(0f, 0f, z);
             time += Time.deltaTime;
             yield return null;

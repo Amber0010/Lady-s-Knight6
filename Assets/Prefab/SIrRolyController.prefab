@@ -79,7 +79,7 @@ Transform:
   m_GameObject: {fileID: 2428956369044607519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.36, y: -0.14, z: 0}
+  m_LocalPosition: {x: -0.34, y: -0.055, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -206,7 +206,7 @@ Animator:
   m_GameObject: {fileID: 2676151398025278409}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 28cf2f49113939148b6515fbd10d4185, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -230,7 +230,6 @@ GameObject:
   - component: {fileID: 6598951070422559695}
   - component: {fileID: 4676155565641030624}
   - component: {fileID: 6115581192797103204}
-  - component: {fileID: 2787607618202932243}
   - component: {fileID: 2105945944261084456}
   m_Layer: 0
   m_Name: SirRoly
@@ -306,7 +305,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 45e802fa1e4d7ea4d8b560bbfe28bf26, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -333,18 +332,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.0639562}
   m_Size: {x: 0.5, y: 1.1279124}
   m_Direction: 0
---- !u!114 &2787607618202932243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3992047063068652928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3de1e2febd827b4aa96e509de0d5bbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GroundCollisionRelay
 --- !u!58 &2105945944261084456
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -461,9 +448,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -701595729
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -334549523355427435, guid: a1d7cbe76cc13a14d826593266ff0d59, type: 3}
+  m_Sprite: {fileID: 3559973674893018952, guid: 0ec73ea7bc33cdf4a8e97d2d7257abe9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -520,7 +507,7 @@ Transform:
   m_GameObject: {fileID: 6973324181106071821}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.38199997, y: -0.14, z: 0}
+  m_LocalPosition: {x: 0.376, y: 0.091, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -603,9 +590,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -701595729
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4825321697455300368, guid: f2fa9afff3e2ecd45bfa1d0307ea3705, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
