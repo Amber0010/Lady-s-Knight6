@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8957577113254186581}
-  - component: {fileID: 407521377589757128}
+  - component: {fileID: 6769201999134013766}
+  - component: {fileID: 4441723476409029410}
+  - component: {fileID: 7489135013972394996}
   m_Layer: 0
   m_Name: SIrRolyController
   m_TagString: SirRoly
@@ -34,7 +36,7 @@ Transform:
   - {fileID: 5670856898462322827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &407521377589757128
+--- !u!114 &6769201999134013766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,9 +45,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1796542000995949273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3f7f012fb301d438f75b1aed0882a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 292578a2f56052546be5d533e85b6ad6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SirRolyMovementNewAnim
+  m_EditorClassIdentifier: Assembly-CSharp::SirRoly_Movement
   speed: 2
   jumpForce: 6
   isRolled: 0
@@ -54,6 +56,118 @@ MonoBehaviour:
   sword: {fileID: 3292407905698205933, guid: 80844698ac2e316458a013256a9ad7d6, type: 3}
   swordSpawnLeft: {fileID: 1528062551118070386}
   swordSpawnRight: {fileID: 190423466058525294}
+  canJump: 1
+--- !u!114 &4441723476409029410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796542000995949273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44c141a93e5aaf498a2294f45d0eddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RolySound
+  myClipC: {fileID: 8300000, guid: d5255545260ec694eb231cea07d5a61d, type: 3}
+  myClipD: {fileID: 8300000, guid: df512dc5d0dbeb84b823d154eb16e727, type: 3}
+--- !u!82 &7489135013972394996
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796542000995949273}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2428956369044607519
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +193,7 @@ Transform:
   m_GameObject: {fileID: 2428956369044607519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.34, y: -0.055, z: 0}
+  m_LocalPosition: {x: -0.36, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -206,7 +320,7 @@ Animator:
   m_GameObject: {fileID: 2676151398025278409}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 28cf2f49113939148b6515fbd10d4185, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -230,7 +344,7 @@ GameObject:
   - component: {fileID: 6598951070422559695}
   - component: {fileID: 4676155565641030624}
   - component: {fileID: 6115581192797103204}
-  - component: {fileID: 2105945944261084456}
+  - component: {fileID: 2787607618202932243}
   m_Layer: 0
   m_Name: SirRoly
   m_TagString: SirRoly
@@ -305,43 +419,6 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 45e802fa1e4d7ea4d8b560bbfe28bf26, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.0639562}
-  m_Size: {x: 0.5, y: 1.1279124}
-  m_Direction: 0
---- !u!58 &2105945944261084456
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3992047063068652928}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -366,8 +443,21 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0039542317, y: -0.3716981}
-  m_Radius: 0.27460864
+  m_Offset: {x: 0, y: -0.08439714}
+  m_Size: {x: 0.5, y: 1.1687943}
+  m_Direction: 0
+--- !u!114 &2787607618202932243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992047063068652928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3de1e2febd827b4aa96e509de0d5bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundCollisionRelay
 --- !u!1 &4878626045082540605
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +517,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -446,12 +536,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -701595729
-  m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3559973674893018952, guid: 0ec73ea7bc33cdf4a8e97d2d7257abe9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -334549523355427435, guid: a1d7cbe76cc13a14d826593266ff0d59, type: 3}
+  m_Color: {r: 0.6459593, g: 0.71584207, b: 0.7207546, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -470,7 +560,7 @@ Animator:
   m_GameObject: {fileID: 4878626045082540605}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 28cf2f49113939148b6515fbd10d4185, type: 2}
+  m_Controller: {fileID: 9100000, guid: 13e9d0c9ba9f5bc4482a2157d25556ef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -507,7 +597,7 @@ Transform:
   m_GameObject: {fileID: 6973324181106071821}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.376, y: 0.091, z: 0}
+  m_LocalPosition: {x: 0.38199997, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -590,9 +680,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -701595729
-  m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4825321697455300368, guid: f2fa9afff3e2ecd45bfa1d0307ea3705, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
