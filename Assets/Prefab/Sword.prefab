@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sword
   swingDegrees: 120
-  swingTime: 0.15
+  swingTime: 0.3
 --- !u!1 &5581769650830392909
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,8 +171,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -701595729
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2377102275064834164, guid: da0bc9dbba073b749be401731eca62b4, type: 3}

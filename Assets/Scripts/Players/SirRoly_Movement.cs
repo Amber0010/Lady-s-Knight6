@@ -10,6 +10,7 @@ public class SirRoly_Movement : MonoBehaviour
     Rigidbody2D rb;
 
     public bool isRolled = false;
+    public bool canJump = true;
 
     public GameObject normalState;
     public GameObject rolledState;
@@ -19,9 +20,6 @@ public class SirRoly_Movement : MonoBehaviour
     public Transform swordSpawnRight;
 
     private Animator animator;
-    
-    public bool canJump = true;
-    
     private SpriteRenderer spriteRenderer;
     private bool facingRight = true;
 
@@ -44,7 +42,7 @@ public class SirRoly_Movement : MonoBehaviour
             rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
             if (isRolled)
             {
-                rb.AddForce(Vector2.left * .5f, ForceMode2D.Force);
+                rb.AddForce(Vector2.left * 3.5f, ForceMode2D.Force);
             }
         }
         else if (Input.GetKey(KeyCode.L))
@@ -53,7 +51,7 @@ public class SirRoly_Movement : MonoBehaviour
             rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
             if (isRolled)
             {
-                rb.AddForce(Vector2.right * .5f, ForceMode2D.Force);
+                rb.AddForce(Vector2.right * 3.5f, ForceMode2D.Force);
             }
         }
         else
@@ -72,10 +70,13 @@ public class SirRoly_Movement : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
-        animator.SetBool("isWalking", move != 0);
-
-        if (Input.GetKeyDown(KeyCode.I) && canJump && !isRolled)
+        if (!isRolled)
         {
+            animator.SetBool("isWalking", move != 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.I) && rb.linearVelocityY == 0 && !isRolled)
+        {   
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
             canJump = false;
