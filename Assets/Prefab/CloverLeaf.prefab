@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbf270e27f2ec44b8665b612d92501f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloverLeaf
-  myClipClover: {fileID: 8300000, guid: 48d1c051d59638247a56a309f043b038, type: 3}
 --- !u!212 &4665877075545500581
 SpriteRenderer:
   serializedVersion: 2
