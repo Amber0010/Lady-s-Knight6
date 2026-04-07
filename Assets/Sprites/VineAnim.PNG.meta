@@ -154,12 +154,12 @@ TextureImporter:
       name: VineAnim_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: VineAnim_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 63
         y: 0
-        width: 64
+        width: 130
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: VineAnim_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 191
         y: 0
-        width: 64
+        width: 129
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: VineAnim_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 320
         y: 0
-        width: 64
-        height: 64
+        width: 68
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: VineAnim_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
+        x: 352
+        y: 56
+        width: 9
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -264,12 +264,12 @@ TextureImporter:
       name: VineAnim_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
+        x: 390
+        y: 3
+        width: 55
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: VineAnim_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 452
         y: 0
-        width: 64
-        height: 64
+        width: 57
+        height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: VineAnim_7
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
+        x: 516
+        y: 1
+        width: 56
+        height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,12 +330,12 @@ TextureImporter:
       name: VineAnim_8
       rect:
         serializedVersion: 2
-        x: 512
+        x: 578
         y: 0
-        width: 64
-        height: 64
+        width: 63
+        height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -352,12 +352,12 @@ TextureImporter:
       name: VineAnim_9
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
+        x: 617
+        y: 51
+        width: 9
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -376,10 +376,10 @@ TextureImporter:
         serializedVersion: 2
         x: 640
         y: 0
-        width: 64
+        width: 65
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -398,10 +398,10 @@ TextureImporter:
         serializedVersion: 2
         x: 704
         y: 0
-        width: 64
+        width: 65
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -420,10 +420,10 @@ TextureImporter:
         serializedVersion: 2
         x: 768
         y: 0
-        width: 64
+        width: 65
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -442,10 +442,10 @@ TextureImporter:
         serializedVersion: 2
         x: 832
         y: 0
-        width: 64
+        width: 65
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -464,10 +464,10 @@ TextureImporter:
         serializedVersion: 2
         x: 896
         y: 0
-        width: 64
+        width: 65
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -489,7 +489,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,11 +502,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: VineAnim_16
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 32
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1a926acb2cf6450800000000000000
+      internalID: 6084295737098215892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineAnim_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 10
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e17522fe77bbe2d0800000000000000
+      internalID: -3248300950361378331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 032f59b5d06d70d438900a9f8617f211
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -514,9 +558,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
       VineAnim_0: 4116956241589674549
       VineAnim_1: -4911988027672098496
@@ -526,6 +568,8 @@ TextureImporter:
       VineAnim_13: 8705657371086211239
       VineAnim_14: -2626194968588104811
       VineAnim_15: -7405217882865979422
+      VineAnim_16: 6084295737098215892
+      VineAnim_17: -3248300950361378331
       VineAnim_2: 1220389031707510482
       VineAnim_3: 4582014186389757428
       VineAnim_4: -7616385365993763232
