@@ -6,20 +6,21 @@ public class Rock : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject sirRoly;
-    void Start()
+    private Animator animator;
+    public void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (sirRoly.GetComponent<SirRoly_Movement>().isRolled)
-            Destroy(this.gameObject);
+        if (sirRoly.GetComponent<SirRolyMovementNewAnim>().isRolled)
+        {
+            animator.SetTrigger("Break");
+        }
+    }
+
+    public void Break()
+    {
+        Destroy(this.gameObject);
     }
 }
