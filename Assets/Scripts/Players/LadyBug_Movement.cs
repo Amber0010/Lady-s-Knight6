@@ -93,13 +93,16 @@ public class LadyBug_Movement : MonoBehaviour
 
 void CastSparkle()
     {
+        Debug.Log("Q pressed - CastSparkle called");
         Vector2 direction = RightFacing ? Vector2.right : Vector2.left;
         Vector2 checkPos = (Vector2)transform.position + direction * detectionRange;
         Collider2D[] hits = Physics2D.OverlapCircleAll(checkPos, interactRange);
+        Debug.Log("Q pressed - CastSparkle called");
         Transform closestTarget=null;
         float closestDistance=Mathf.Infinity;
         foreach (Collider2D hit in hits)
         {
+            Debug.Log("Hit object: " + hit.name + " Tag: " + hit.tag);
             if (hit.CompareTag(sparkleInteract))
             {
                 float dist=Vector2.Distance(transform.position, hit.transform.position);
@@ -110,13 +113,27 @@ void CastSparkle()
                 }
             }
         }
+        if (closestTarget == null)
+        {
+            Debug.Log("No valid sparkle target found");
+        }
+
+        if (sparkleSpell == null)
+        {
+            Debug.Log("sparkleSpell prefab is NOT assigned"); 
+        }
         if (closestTarget != null && sparkleSpell != null)
         {
+            Debug.Log("Spawning sparkle toward: " + closestTarget.name);
             GameObject effect = Instantiate(sparkleSpell, transform.position, Quaternion.identity);
             SparkleMagicLogic spell = effect.GetComponent<SparkleMagicLogic>();
             if (spell != null)
             {
                 spell.setTarget(closestTarget);
+            }
+            else
+            {
+                Debug.Log("SparkleMagicLogic missing on sparkle prefab");
             }
         }
     }

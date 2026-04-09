@@ -3271,7 +3271,7 @@ GameObject:
   - component: {fileID: 138981061}
   m_Layer: 0
   m_Name: BounceShroom
-  m_TagString: Untagged
+  m_TagString: SparkleInteract
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3696,6 +3696,79 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1106505171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 442959077660294167, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 442959077660294167, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330661244763642708, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330661244763642708, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563779254192982603, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_Name
+      value: Tunnel 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9080318
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06900585
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496877172994142880, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8ab4d7fced3d894ead6d42ed22edcdc, type: 3}
 --- !u!1 &1161980817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4100,6 +4173,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1731631321413682216, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: sparkleSpell
+      value: 
+      objectReference: {fileID: 7714192173956001571, guid: 88d48a7b66ab63b48b46209d11852d1a, type: 3}
     - target: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
       propertyPath: m_Name
       value: LadyBug (1)
@@ -4119,3 +4196,4 @@ SceneRoots:
   - {fileID: 138981064}
   - {fileID: 1954548063}
   - {fileID: 240422669}
+  - {fileID: 1106505171}
