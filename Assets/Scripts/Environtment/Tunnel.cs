@@ -18,7 +18,7 @@ public class Tunnel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerInside && sirRolyRolled.GetComponentInParent<SirRoly_Movement>().isRolled && Input.GetKeyDown(KeyCode.H))
+        if (playerInside && sirRolyRolled.GetComponentInParent<SirRolyMovementNewAnim>().isRolled && Input.GetKeyDown(KeyCode.O))
         {
             Teleport();
         }
