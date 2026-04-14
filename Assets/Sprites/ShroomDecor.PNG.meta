@@ -112,12 +112,12 @@ TextureImporter:
       name: ShroomDecor_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 32
-        width: 37
-        height: 15
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -130,77 +130,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: ShroomDecor_1
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 46
-        width: 35
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 123d18693142e55c0800000000000000
-      internalID: -4224899733878877407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShroomDecor_2
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2
-        width: 56
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a940c61bd8dba8f0800000000000000
-      internalID: -528090095794763355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShroomDecor_3
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 32
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f0c0ccdc6f1ae480800000000000000
-      internalID: -8869241963732221704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6433ab26d3d19bb449d8177bcd7ca372
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +142,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ShroomDecor_0: 6035795393510412005
-      ShroomDecor_1: -4224899733878877407
-      ShroomDecor_2: -528090095794763355
-      ShroomDecor_3: -8869241963732221704
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
