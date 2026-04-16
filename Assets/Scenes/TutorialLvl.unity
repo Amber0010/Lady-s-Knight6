@@ -5538,8 +5538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   pauseMenu: {fileID: 527920204}
-  rolyController: {fileID: 0}
-  ladyController: {fileID: 0}
+  rolyController: {fileID: 811375988}
+  ladyController: {fileID: 925839144}
 --- !u!1 &444081485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7844,6 +7844,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1331391080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &811375988 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 407521377589757128, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
+  m_PrefabInstance: {fileID: 8813241367310606978}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3f7f012fb301d438f75b1aed0882a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SirRolyMovementNewAnim
 --- !u!1 &837783180
 GameObject:
   m_ObjectHideFlags: 0
@@ -8095,6 +8106,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
   m_PrefabInstance: {fileID: 925839140}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &925839144 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6528598447807164560, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+  m_PrefabInstance: {fileID: 925839140}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925839141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ea08f952f94f4ea404f9c5e2482f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LadyBugMovementNewAnim
 --- !u!1 &937599535
 GameObject:
   m_ObjectHideFlags: 0
