@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: b0757733687d62442b3ee49ac5cef5a6
+guid: da28baffc93fbc44b97f28c54e1d8f78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -452936518992000626
-    second: PlatformMossy_0
+      213: 8481199276516080839
+    second: BirdsOfPrey_0
+  - first:
+      213: 4267194632614438838
+    second: BirdsOfPrey_1
+  - first:
+      213: 3486727380160384575
+    second: BirdsOfPrey_2
+  - first:
+      213: -3015128455717724617
+    second: BirdsOfPrey_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlatformMossy_0
+      name: BirdsOfPrey_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 127
-        height: 63
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e890eafb2a8d6b9f0800000000000000
-      internalID: -452936518992000626
+      spriteID: 7cc7a028ec543b570800000000000000
+      internalID: 8481199276516080839
       vertices: []
       indices: 
       edges: []
@@ -125,7 +134,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ef2987ede5f2fc7499f7764a1c8e154a
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +142,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlatformMossy_0: -452936518992000626
+      BirdsOfPrey_0: 8481199276516080839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

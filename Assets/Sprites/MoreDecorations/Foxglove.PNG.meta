@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: b0757733687d62442b3ee49ac5cef5a6
+guid: 6b78590bd7f70a847b488e07e2703911
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -452936518992000626
-    second: PlatformMossy_0
+      213: -3202132946412507374
+    second: Foxglove_0
+  - first:
+      213: -3499022064241050787
+    second: Foxglove_1
+  - first:
+      213: 7865778933864188692
+    second: Foxglove_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlatformMossy_0
+      name: Foxglove_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 127
-        height: 63
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e890eafb2a8d6b9f0800000000000000
-      internalID: -452936518992000626
+      spriteID: 21fe1850d0dbf83d0800000000000000
+      internalID: -3202132946412507374
       vertices: []
       indices: 
       edges: []
@@ -125,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 27caf94a42f6f4c41b8dc5fafd4e805b
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +139,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlatformMossy_0: -452936518992000626
+      Foxglove_0: -3202132946412507374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
