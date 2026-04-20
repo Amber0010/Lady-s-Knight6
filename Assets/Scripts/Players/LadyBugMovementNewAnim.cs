@@ -5,7 +5,9 @@ public class LadyBugMovementNewAnim : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float speed = 5f;
-    public float jumpForce = 2f;
+    public float halfJump = 4f;
+    public float jumpForce = 12f;
+    public float holdTime = .2f;
     public float interactRange = 2f;
     public float detectionRange = 2f;
 
@@ -13,9 +15,9 @@ public class LadyBugMovementNewAnim : MonoBehaviour
 
     public Rigidbody2D rb;
     bool RightFacing = true;
-    private float glideSpeed = -1.5f;
+    private float jumpTimer;
     private float startGravity;
-
+    private bool isJumping = false;
     private Animator animator;
     public SpriteRenderer spriteRenderer;
 
@@ -67,30 +69,33 @@ public class LadyBugMovementNewAnim : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
-            if (rb.linearVelocityY <= 0)
-            {
-                rb.gravityScale = startGravity;
-            }
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            animator.SetTrigger("Jump");
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            rb.AddForce(Vector2.up * halfJump, ForceMode2D.Impulse);
             canJump = false;
-
+            isJumping = true;
+            jumpTimer = holdTime;
+            animator.SetTrigger("Jump");
+        }
+        if (Input.GetKey(KeyCode.W) && isJumping)
+        {
+            if (jumpTimer > 0f)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                jumpTimer -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            isJumping = false;
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             CastSparkle();
             animator.SetTrigger("Attack");
-        }
-        if (Input.GetKey(KeyCode.W) && rb.linearVelocityY <= 0)
-        {
-            rb.gravityScale = startGravity * .3f;
-            //animator.SetBool("isGliding", true);
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, glideSpeed);
-        }
-        else
-        {
-            rb.gravityScale = startGravity;
-            //animator.SetBool("isGliding", false);
         }
     }
 
@@ -136,6 +141,8 @@ public class LadyBugMovementNewAnim : MonoBehaviour
         if (collision.contacts[0].normal.y > .5f)
         {
             canJump = true;
+            isJumping = false;
         }
     }
 }
+

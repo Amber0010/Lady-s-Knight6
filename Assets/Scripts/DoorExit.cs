@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class DoorExit : MonoBehaviour
@@ -14,6 +15,9 @@ public class DoorExit : MonoBehaviour
     private int totalClovers;
     private int CurrClovers = 0;
     private bool DoorOpen = false;
+
+    private bool RolyAtDoor = false;
+    private bool LadyAtDoor = false;
     private SpriteRenderer spriteRenderer;
 
     private void OnEnable()
@@ -32,10 +36,10 @@ public class DoorExit : MonoBehaviour
         animator = GetComponent<Animator>();
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-   private void HandleCloverCollected(int num)
+    private void HandleCloverCollected(int num)
     {
         CurrClovers += num;
-        if (CurrClovers>=totalClovers && !DoorOpen)
+        if (CurrClovers >= totalClovers && !DoorOpen)
         {
             OpenDoor();
         }
@@ -48,10 +52,54 @@ public class DoorExit : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!DoorOpen) return;
-        if (collision.CompareTag("SirRoly") && collision.CompareTag("LadyBug"))
+
+        Transform root = collision.transform.root;
+
+        if (root.CompareTag("SirRoly"))
         {
-            SceneManager.LoadScene(nextLevelName);
+            RolyAtDoor = true;
         }
+        if (root.CompareTag("LadyBug"))
+        {
+            LadyAtDoor = true;
+        }
+        if (DoorOpen)
+        {
+            BothAtDoor();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Transform root = collision.transform.root;
+
+        if (root.CompareTag("SirRoly"))
+        {
+            RolyAtDoor = false;
+        }
+        if (root.CompareTag("LadyBug"))
+        {
+            LadyAtDoor = false;
+        }
+    }
+    void BothAtDoor()
+    {
+        if (RolyAtDoor && LadyAtDoor)
+        {
+            LoadNextLevel();
+        }
+    }
+    void LoadNextLevel()
+    {
+        int currIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextIndex = currIndex + 1;
+        if (nextIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
+
     }
 }
