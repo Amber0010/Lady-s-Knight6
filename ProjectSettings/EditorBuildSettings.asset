@@ -18,8 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1.unity
     guid: f2b40a81777ecb24d8b599a1303cc1df
   - enabled: 1
+    path: Assets/Scenes/SplashPanel.unity
+    guid: 873a8483b74e0f3468b8a68ee45d2f16
+  - enabled: 1
     path: Assets/Scenes/BossLevel.unity
     guid: 05f9034fbf873024a87765df510283f6
+  - enabled: 1
+    path: Assets/Scenes/EndingStory.unity
+    guid: a22d4a56442645749a5c47a5d34f5670
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

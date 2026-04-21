@@ -11,7 +11,7 @@ public class WandAttackOnly : MonoBehaviour
     public float bobSpeed = 2f;
     public float bobHeight = .05f;
 
-    private bool isOveriding = false;
+    //private bool isOveriding = false;
 
     //float z = 0f;
 
@@ -69,7 +69,7 @@ public class WandAttackOnly : MonoBehaviour
 
     IEnumerator WandWave()
     {
-        isOveriding = true;
+        //isOveriding = true;
 
         wandSR.enabled = true;
 
@@ -106,7 +106,7 @@ public class WandAttackOnly : MonoBehaviour
 
         wandSR.enabled = false;
 
-        isOveriding = false;
+        //isOveriding = false;
     }
 
     //IEnumerator Walking()
