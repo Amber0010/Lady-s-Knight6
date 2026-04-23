@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
 
         rolyController.enabled = false;
         ladyController.enabled = false;
+        Time.timeScale = 0f;
 
         isPaused = true;
     }
@@ -37,12 +38,13 @@ public class PauseMenu : MonoBehaviour
 
         rolyController.enabled = true;
         ladyController.enabled = true;
-
+        Time.timeScale = 1f;
         isPaused = false;
     }
 
     public void ReloadScene()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

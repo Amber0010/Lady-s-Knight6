@@ -14,7 +14,7 @@ public class DoorExit : MonoBehaviour
 
     private int totalClovers;
     private int CurrClovers = 0;
-    private bool DoorOpen = false;
+    public bool DoorOpen = false;
 
     private bool RolyAtDoor = false;
     private bool LadyAtDoor = false;

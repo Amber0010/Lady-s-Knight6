@@ -12,7 +12,7 @@ public class BossCameraMovement : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= delay)
+        if (timer >= delay && transform.position.x < 44)
         {
             transform.position += Vector3.right * CamSpeed * Time.deltaTime;
         }

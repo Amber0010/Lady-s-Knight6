@@ -13,7 +13,7 @@ public class Rock : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (sirRoly.GetComponent<SirRolyMovementNewAnim>().isRolled)
+        if (sirRoly.GetComponent<SirRolyMovementNewAnim>().isRolled && collision.gameObject.tag == "SirRoly")
         {
             animator.SetTrigger("Break");
         }

@@ -7,6 +7,7 @@ public class RolySound : MonoBehaviour
     public AudioClip Roll;
     public AudioClip Special;
     AudioSource audioSource;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +21,11 @@ public class RolySound : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I)){
             audioSource.PlayOneShot(Jump);
         } else if (Input.GetKeyDown(KeyCode.U)){
-            audioSource.PlayOneShot(Roll);
+            audioSource.PlayOneShot(Roll, 2f);
         } else if (Input.GetKeyDown(KeyCode.O)){
-            audioSource.PlayOneShot(Special);
-    }
+            audioSource.PlayOneShot(Special, 0.5f);
+            
+
+        }
 }
 }

@@ -95,7 +95,7 @@ public class TutorialDoor : MonoBehaviour
     }
     IEnumerator WaitforThoughts()
     {
-        yield return new WaitForSeconds(2.6f);
+        yield return new WaitForSeconds(2f);
         LoadNextLevel();
     }
 }
