@@ -12,6 +12,9 @@ public class DoorExit : MonoBehaviour
 
     Animator animator;
 
+    public GameObject Lady;
+    public GameObject SirRoly;
+    public GameObject SirRolyRolled;
     private int totalClovers;
     private int CurrClovers = 0;
     public bool DoorOpen = false;
@@ -55,11 +58,12 @@ public class DoorExit : MonoBehaviour
 
         Transform root = collision.transform.root;
 
-        if (root.CompareTag("SirRoly"))
+        if (collision.gameObject==SirRoly || SirRolyRolled)
         {
+            Debug.Log("roly collision enter");
             RolyAtDoor = true;
         }
-        if (root.CompareTag("LadyBug"))
+        if (collision.gameObject==Lady)
         {
             LadyAtDoor = true;
         }
@@ -74,6 +78,8 @@ public class DoorExit : MonoBehaviour
 
         if (root.CompareTag("SirRoly"))
         {
+            Debug.Log("roly collision exit");
+
             RolyAtDoor = false;
         }
         if (root.CompareTag("LadyBug"))

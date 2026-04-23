@@ -102,6 +102,7 @@ public class SirRolyMovementNewAnim : MonoBehaviour
     void changeState()
     {
         isRolled = !isRolled;
+        rb.WakeUp();
     }
 
     public void rolyState()

@@ -1,10 +1,14 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class BossDoor : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject Lady;
+    public GameObject SirRoly;
+    public GameObject SirRolyRolled;
     public bool RolyAtDoor = false;
     public bool LadyAtDoor = false;
     //private SpriteRenderer spriteRenderer;
@@ -35,14 +39,17 @@ public class BossDoor : MonoBehaviour
 
         Transform root = collision.transform.root;
 
-        if (root.CompareTag("SirRoly"))
+
+        if (collision.gameObject == SirRoly || SirRolyRolled)
         {
+            Debug.Log("roly collision enter");
             RolyAtDoor = true;
         }
-        if (root.CompareTag("LadyBug"))
+        if (collision.gameObject == Lady)
         {
             LadyAtDoor = true;
         }
+       
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -51,6 +58,7 @@ public class BossDoor : MonoBehaviour
 
         if (root.CompareTag("SirRoly"))
         {
+            Debug.Log("roly collision exit");
             RolyAtDoor = false;
         }
         if (root.CompareTag("LadyBug"))

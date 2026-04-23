@@ -744,6 +744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RolyBox 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3258228497931404202, guid: ebffcf949adca0748bd0e5e3b2a56996, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4498224656038601990, guid: ebffcf949adca0748bd0e5e3b2a56996, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1346,6 +1350,10 @@ PrefabInstance:
     - target: {fileID: 7839059358834222814, guid: 84e0a47988bf256478723f4441f81a96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013806545821236685, guid: 84e0a47988bf256478723f4441f81a96, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

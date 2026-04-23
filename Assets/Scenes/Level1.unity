@@ -857,6 +857,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &98660179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3992047063068652928, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
+  m_PrefabInstance: {fileID: 1076028909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &102827045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2649495123491148120, guid: 53861be8b56c56f46b8fac320719f83b, type: 3}
@@ -10668,12 +10673,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6528598447807164560, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
   m_PrefabInstance: {fileID: 2025665884}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1346729478}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e41ea08f952f94f4ea404f9c5e2482f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LadyBugMovementNewAnim
+--- !u!1 &1346729478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+  m_PrefabInstance: {fileID: 2025665884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1362570001
 GameObject:
   m_ObjectHideFlags: 0
@@ -14550,6 +14560,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1670525063}
+    - target: {fileID: 3242295182512334841, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1904205126}
+    - target: {fileID: 3242295182512334841, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: toMainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 4167442779469186331, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -14591,6 +14609,18 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4204144616996941197, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1457443
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204144616996941197, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1457443
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204144616996941197, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1457443
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204144616996941197, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -14620,7 +14650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4204144616996941197, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -41.193
+      value: -57
       objectReference: {fileID: 0}
     - target: {fileID: 4204144616996941197, guid: a1b654a823855b84f9ec60ae71b45a15, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14781,6 +14811,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 4242857700861649920, guid: 4f0df6af7ca2e3f489290ac2151f3716, type: 3}
+      propertyPath: Lady
+      value: 
+      objectReference: {fileID: 1346729478}
+    - target: {fileID: 4242857700861649920, guid: 4f0df6af7ca2e3f489290ac2151f3716, type: 3}
+      propertyPath: SirRoly
+      value: 
+      objectReference: {fileID: 98660179}
+    - target: {fileID: 4242857700861649920, guid: 4f0df6af7ca2e3f489290ac2151f3716, type: 3}
+      propertyPath: SirRolyRolled
+      value: 
+      objectReference: {fileID: 246906062}
     - target: {fileID: 6640729971468279690, guid: 4f0df6af7ca2e3f489290ac2151f3716, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.64

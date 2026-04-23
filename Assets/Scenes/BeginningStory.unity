@@ -2410,12 +2410,29 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: 'Once, on a day like any other, King dragonfly woke up with the desire
+        for treasure.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
       propertyPath: lines.Array.data[1].text
-      value: Outside his window, just across the forest, stood Tulip Castle.
+      value: 'Outside his window, just across the forest, stood Tulip Castle.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
       propertyPath: lines.Array.data[2].text
-      value: " Inside he knew was the shiniest of objects, a golden crown. \r\n"
+      value: "Inside he knew was the shiniest of objects, a golden crown. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Narr
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
+      propertyPath: lines.Array.data[1].speaker
+      value: Narr
       objectReference: {fileID: 0}
     - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
       propertyPath: lines.Array.data[2].speaker

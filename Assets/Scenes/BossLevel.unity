@@ -8585,7 +8585,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6528598447807164560, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
   m_PrefabInstance: {fileID: 1721646438}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1919846110}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e41ea08f952f94f4ea404f9c5e2482f9, type: 3}
@@ -13144,6 +13144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed2d8c2364736b84e810805f278fb616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossDoor
+  Lady: {fileID: 1919846110}
+  SirRoly: {fileID: 1933360716}
+  SirRolyRolled: {fileID: 862848615}
   RolyAtDoor: 0
   LadyAtDoor: 0
 --- !u!70 &1686451889
@@ -13180,8 +13183,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0029340587, y: -0.3786908}
-  m_Size: {x: 1.0456618, y: 0.5226258}
+  m_Offset: {x: -0.027271643, y: -0.22962809}
+  m_Size: {x: 1.3498789, y: 0.8207572}
   m_Direction: 1
 --- !u!1 &1686754471
 GameObject:
@@ -13684,6 +13687,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 312274581493193659, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222665552617902769, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+      propertyPath: m_SleepingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
@@ -14618,6 +14625,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1919846110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8553372962377755940, guid: 2d1d8eed657afd14e9f23c061e919ffd, type: 3}
+  m_PrefabInstance: {fileID: 1721646438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1924670258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14627,12 +14639,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2349466853470817155, guid: 67709dc4c3ccd4944a6d571ae360fff4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.594
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349466853470817155, guid: 67709dc4c3ccd4944a6d571ae360fff4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.594
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349466853470817155, guid: 67709dc4c3ccd4944a6d571ae360fff4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349466853470817155, guid: 67709dc4c3ccd4944a6d571ae360fff4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.04
       objectReference: {fileID: 0}
     - target: {fileID: 2349466853470817155, guid: 67709dc4c3ccd4944a6d571ae360fff4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 2349466853470817155, guid: 67709dc4c3ccd4944a6d571ae360fff4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14679,6 +14703,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67709dc4c3ccd4944a6d571ae360fff4, type: 3}
+--- !u!1 &1933360716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3992047063068652928, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
+  m_PrefabInstance: {fileID: 1962275067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1938777143
 GameObject:
   m_ObjectHideFlags: 0
@@ -14778,9 +14807,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1106886040464904949, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1796542000995949273, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
       propertyPath: m_Name
       value: SIrRolyController
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598951070422559695, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8957577113254186581, guid: 7e82d3dc25f411e4e942654c83d6504e, type: 3}
       propertyPath: m_LocalPosition.x

@@ -616,6 +616,10 @@ PrefabInstance:
       value: "\u201CYes, Milady!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: Narr
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637081734244307681, guid: 1bcdbca270d815c488ca5936c66bf65f, type: 3}
       propertyPath: lines.Array.data[1].speaker
       value: Lady
       objectReference: {fileID: 0}
