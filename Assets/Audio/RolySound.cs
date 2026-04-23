@@ -4,6 +4,7 @@ public class RolySound : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public AudioClip Jump;
+    public SirRolyMovementNewAnim rolyMovement;
     public AudioClip Roll;
     public AudioClip Special;
     AudioSource audioSource;
@@ -22,7 +23,7 @@ public class RolySound : MonoBehaviour
             audioSource.PlayOneShot(Jump);
         } else if (Input.GetKeyDown(KeyCode.U)){
             audioSource.PlayOneShot(Roll, 2f);
-        } else if (Input.GetKeyDown(KeyCode.O)){
+        } else if (Input.GetKeyDown(KeyCode.O)&& !rolyMovement.isRolled){
             audioSource.PlayOneShot(Special, 0.5f);
             
 

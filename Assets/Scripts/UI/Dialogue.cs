@@ -1,35 +1,62 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text dText;
-    public string[] lines;
-    private int currentLine = 0;
+    [System.Serializable]
+    public class DialogueLine
+    {
+        public string speaker;
+        [TextArea(2, 4)]
+        public string text;
 
-    //LadyBugMovementNewAnim taking
-    //    roly talking 
-    //    neither = plain
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    }
+    public DialogueLine[] lines;
+    public GameObject narrBox;
+    public TMP_Text narrText;
+    public GameObject ladyBox;
+    public TMP_Text ladyText;
+    public GameObject rolyBox;
+    public TMP_Text rolyText;
+    private int currLine = 0;
     void Start()
     {
-        if (lines.Length > 0)
-        {
-            dText.text = lines[0];
-        }
+        ShowLine();
     }
     public void NextLine()
     {
-        currentLine++;
-        if (currentLine < lines.Length)
+        currLine++;
+        if (currLine < lines.Length)
         {
-            dText.text = lines[currentLine];
+            ShowLine();
         }
         else
         {
             EndDialogue();
+        }
+    }
+    void ShowLine()
+    {
+        narrBox.SetActive(false);
+        ladyBox.SetActive(false);
+        rolyBox.SetActive(false);
+        DialogueLine line = lines[currLine];
+        if (line.speaker == "Lady")
+        {
+            ladyBox.SetActive(true);
+            ladyText.text = line.text;
+        }
+        else if (line.speaker == "Roly")
+        {
+            rolyBox.SetActive(true);
+            rolyText.text = line.text;
+        }
+        else if (line.speaker == "Narr")
+        {
+            narrBox.SetActive(true);
+            narrText.text = line.text;
         }
     }
     void EndDialogue()
@@ -40,5 +67,6 @@ public class DialogueManager : MonoBehaviour
             SceneManager.LoadScene(nextScene);
         }
     }
+       
     // Update is called once per frame
 }

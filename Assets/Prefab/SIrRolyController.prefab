@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolySound
   Jump: {fileID: 8300000, guid: e2d44da8479ed3f4886623b61166a08c, type: 3}
+  rolyMovement: {fileID: 407521377589757128}
   Roll: {fileID: 8300000, guid: d1e696c462cd48442a10597e26e224f7, type: 3}
   Special: {fileID: 8300000, guid: 46a4bb9fd65e11b42a303ac5149b3e25, type: 3}
 --- !u!82 &1438266466083277055
@@ -324,6 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolySound
   Jump: {fileID: 8300000, guid: e2d44da8479ed3f4886623b61166a08c, type: 3}
+  rolyMovement: {fileID: 0}
   Roll: {fileID: 8300000, guid: d1e696c462cd48442a10597e26e224f7, type: 3}
   Special: {fileID: 0}
 --- !u!95 &5654266408254888079
@@ -363,7 +365,7 @@ GameObject:
   - component: {fileID: 6115581192797103204}
   - component: {fileID: 2105945944261084456}
   - component: {fileID: 1504524605829234860}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SirRoly
   m_TagString: SirRoly
   m_Icon: {fileID: 0}
@@ -379,7 +381,7 @@ Transform:
   m_GameObject: {fileID: 3992047063068652928}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.14, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -440,6 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolySound
   Jump: {fileID: 8300000, guid: e2d44da8479ed3f4886623b61166a08c, type: 3}
+  rolyMovement: {fileID: 0}
   Roll: {fileID: 8300000, guid: e2d44da8479ed3f4886623b61166a08c, type: 3}
   Special: {fileID: 8300000, guid: 46a4bb9fd65e11b42a303ac5149b3e25, type: 3}
 --- !u!70 &6115581192797103204
